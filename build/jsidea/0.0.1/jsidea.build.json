@@ -1,0 +1,1333 @@
+{
+  "project": {
+    "name": "jsidea",
+    "url": "https://raw.githubusercontent.com/jsidea/jsidea/c0957af47489f745007be87110ed4df870d7ffd0/"
+  },
+  "typescript": [
+    {
+      "fullName": "jsidea.action.Cursor",
+      "file": "src/jsidea/action/Cursor.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.action.Cursor",
+        "jsidea.events.EventDispatcher",
+        "jsidea.geom.IPoint2DValue"
+      ]
+    },
+    {
+      "fullName": "jsidea.action.EventCircuit",
+      "file": "src/jsidea/action/EventCircuit.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.action.EventCircuit",
+        "jsidea.events.EventDispatcher",
+        "jsidea.geom.IPoint2DValue"
+      ]
+    },
+    {
+      "fullName": "jsidea.display.Graphics",
+      "file": "src/jsidea/display/Graphics.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.display.Graphics",
+        "jsidea.layout.IBoxModel",
+        "jsidea.layout.BoxModel.BORDER",
+        "jsidea.layout.Transform",
+        "jsidea.geom.Rect2D",
+        "jsidea.layout.Box",
+        "jsidea.layout.BoxModel.CANVAS",
+        "jsidea.geom.Quad",
+        "jsidea.geom.Point3D"
+      ]
+    },
+    {
+      "fullName": "jsidea.events.EventDispatcher",
+      "file": "src/jsidea/events/EventDispatcher.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.events.EventDispatcher",
+        "jsidea.events.IEventDispatcher",
+        "jsidea.model.Dictonary",
+        "jsidea.events.IEventListener"
+      ]
+    },
+    {
+      "fullName": "jsidea.events.Events",
+      "file": "src/jsidea/events/Events.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.events.Events"
+      ]
+    },
+    {
+      "fullName": "jsidea.events.IEventDispatcher",
+      "file": "src/jsidea/events/IEventDispatcher.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.events.IEventDispatcher"
+      ]
+    },
+    {
+      "fullName": "jsidea.events.IEventListener",
+      "file": "src/jsidea/events/IEventListener.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.events.IEventListener"
+      ]
+    },
+    {
+      "fullName": "jsidea.geom.AffineFit",
+      "file": "src/jsidea/geom/AffineFit.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.geom.AffineFit",
+        "jsidea.geom.Point2D",
+        "jsidea.geom.Matrix2D",
+        "jsidea.geom.Point3D",
+        "jsidea.geom.Matrix3D"
+      ]
+    },
+    {
+      "fullName": "jsidea.geom.IComposition2D",
+      "file": "src/jsidea/geom/IComposition2D.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.geom.IComposition2D",
+        "jsidea.geom.Point2D"
+      ]
+    },
+    {
+      "fullName": "jsidea.geom.IComposition3D",
+      "file": "src/jsidea/geom/IComposition3D.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.geom.IComposition3D",
+        "jsidea.geom.Point3D"
+      ]
+    },
+    {
+      "fullName": "jsidea.geom.IMatrix2DValue",
+      "file": "src/jsidea/geom/IMatrix2DValue.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.geom.IMatrix2DValue"
+      ]
+    },
+    {
+      "fullName": "jsidea.geom.IMatrix3DValue",
+      "file": "src/jsidea/geom/IMatrix3DValue.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.geom.IMatrix3DValue"
+      ]
+    },
+    {
+      "fullName": "jsidea.geom.IPoint2DValue",
+      "file": "src/jsidea/geom/IPoint2DValue.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.geom.IPoint2DValue"
+      ]
+    },
+    {
+      "fullName": "jsidea.geom.IPoint3DValue",
+      "file": "src/jsidea/geom/IPoint3DValue.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.geom.IPoint3DValue",
+        "jsidea.geom.IPoint2DValue"
+      ]
+    },
+    {
+      "fullName": "jsidea.geom.IQuadValue",
+      "file": "src/jsidea/geom/IQuadValue.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.geom.IQuadValue",
+        "jsidea.geom.Point3D"
+      ]
+    },
+    {
+      "fullName": "jsidea.geom.IRect2DValue",
+      "file": "src/jsidea/geom/IRect2DValue.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.geom.IRect2DValue",
+        "jsidea.geom.IPoint2DValue"
+      ]
+    },
+    {
+      "fullName": "jsidea.geom.Matrix2D",
+      "file": "src/jsidea/geom/Matrix2D.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.geom.Matrix2D",
+        "jsidea.geom.IMatrix2DValue",
+        "jsidea.geom.Point2D",
+        "jsidea.geom.IPoint2DValue",
+        "jsidea.math.Number",
+        "jsidea.geom.IComposition2D"
+      ]
+    },
+    {
+      "fullName": "jsidea.geom.Matrix3D",
+      "file": "src/jsidea/geom/Matrix3D.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.geom.Matrix3D",
+        "jsidea.geom.IMatrix3DValue",
+        "jsidea.geom.Point3D",
+        "jsidea.geom.IPoint2DValue",
+        "jsidea.geom.IPoint3DValue",
+        "jsidea.math.Number",
+        "jsidea.geom.IComposition3D",
+        "jsidea.geom.Rect2D"
+      ]
+    },
+    {
+      "fullName": "jsidea.geom.Point2D",
+      "file": "src/jsidea/geom/Point2D.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.geom.Point2D",
+        "jsidea.geom.IPoint2DValue",
+        "jsidea.math.Number"
+      ]
+    },
+    {
+      "fullName": "jsidea.geom.Point3D",
+      "file": "src/jsidea/geom/Point3D.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.geom.Point3D",
+        "jsidea.geom.IPoint3DValue",
+        "jsidea.geom.IPoint2DValue",
+        "jsidea.math.Number"
+      ]
+    },
+    {
+      "fullName": "jsidea.geom.Quad",
+      "file": "src/jsidea/geom/Quad.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.geom.Quad",
+        "jsidea.geom.IQuadValue",
+        "jsidea.geom.Point3D",
+        "jsidea.geom.Point2D",
+        "jsidea.geom.Rect2D",
+        "jsidea.geom.IPoint2DValue"
+      ]
+    },
+    {
+      "fullName": "jsidea.geom.Rect2D",
+      "file": "src/jsidea/geom/Rect2D.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.geom.Rect2D",
+        "jsidea.geom.IRect2DValue",
+        "jsidea.geom.Quad",
+        "jsidea.geom.Point3D",
+        "jsidea.system.Engine",
+        "jsidea.math.Number",
+        "jsidea.geom.IPoint2DValue",
+        "jsidea.geom.Point2D"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.Box",
+      "file": "src/jsidea/layout/Box.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.layout.Box",
+        "jsidea.system.Engine",
+        "jsidea.math.Number",
+        "jsidea.layout.IBoxModel",
+        "jsidea.geom.Rect2D",
+        "jsidea.layout.BoxModel.BORDER",
+        "jsidea.geom.Point3D"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.BoxModel.ATTACHMENT",
+      "file": "src/jsidea/layout/BoxModel/Attachment.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.BoxModel.Background",
+        "jsidea.layout.Box",
+        "jsidea.geom.Rect2D",
+        "jsidea.system.Engine",
+        "jsidea.layout.Transform",
+        "jsidea.layout.BoxModel.PADDING",
+        "jsidea.layout.BoxModel.BORDER",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.BoxModel.ATTACHMENT",
+        "jsidea.layout.IBoxModel"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.BoxModel.Background",
+      "file": "src/jsidea/layout/BoxModel/Background.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.layout.BoxModel.Background",
+        "jsidea.layout.IBoxModel",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.Box",
+        "jsidea.geom.Rect2D",
+        "jsidea.layout.BoxModel.PADDING",
+        "jsidea.math.Number",
+        "jsidea.layout.BoxModel.BORDER",
+        "jsidea.layout.BoxModel.BACKGROUND"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.BoxModel.BACKGROUND",
+      "file": "src/jsidea/layout/BoxModel/Background.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.BoxModel.Background",
+        "jsidea.layout.IBoxModel",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.Box",
+        "jsidea.geom.Rect2D",
+        "jsidea.layout.BoxModel.PADDING",
+        "jsidea.math.Number",
+        "jsidea.layout.BoxModel.BORDER",
+        "jsidea.layout.BoxModel.BACKGROUND"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.BoxModel.BORDER",
+      "file": "src/jsidea/layout/BoxModel/Border.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IBoxModel",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.BoxModel.BORDER"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.BoxModel.CANVAS",
+      "file": "src/jsidea/layout/BoxModel/Canvas.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IBoxModel",
+        "jsidea.geom.Matrix2D",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point3D",
+        "jsidea.geom.Point2D",
+        "jsidea.layout.BoxModel.CANVAS"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.BoxModel.CLIP",
+      "file": "src/jsidea/layout/BoxModel/Clip.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IBoxModel",
+        "jsidea.geom.Rect2D",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.BoxModel.CLIP"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.BoxModel.CONTENT",
+      "file": "src/jsidea/layout/BoxModel/Content.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IBoxModel",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.BoxModel.CONTENT"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.BoxModel.IMAGE",
+      "file": "src/jsidea/layout/BoxModel/Image.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IBoxModel",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.BoxModel.IMAGE"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.BoxModel.MARGIN",
+      "file": "src/jsidea/layout/BoxModel/Margin.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IBoxModel",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.BoxModel.MARGIN"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.BoxModel.NDC",
+      "file": "src/jsidea/layout/BoxModel/NormalDeviceCoordinates.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IBoxModel",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.BoxModel.NDC"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.BoxModel.PADDING",
+      "file": "src/jsidea/layout/BoxModel/Padding.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IBoxModel",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.BoxModel.PADDING"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.BoxModel.SCROLL",
+      "file": "src/jsidea/layout/BoxModel/Scroll.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IBoxModel",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point2D",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.BoxModel.PADDING",
+        "jsidea.layout.BoxModel.SCROLL"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.IBoxModel",
+      "file": "src/jsidea/layout/IBoxModel.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.layout.IBoxModel",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point3D"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.IMoveLimits",
+      "file": "src/jsidea/layout/IMoveLimits.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.layout.IMoveLimits",
+        "jsidea.layout.IBoxModel"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.IMoveMode",
+      "file": "src/jsidea/layout/IMoveMode.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.layout.IBoxModel",
+        "jsidea.geom.Point3D"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.IPositionFrom",
+      "file": "src/jsidea/layout/IPositionFrom.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.layout.IPositionFrom",
+        "jsidea.layout.IPositionTo",
+        "jsidea.math.ILimit"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.IPositionTo",
+      "file": "src/jsidea/layout/IPositionTo.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.layout.IPositionTo",
+        "jsidea.layout.IBoxModel"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.ISnapGrid",
+      "file": "src/jsidea/layout/ISnapGrid.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.layout.ISnapGrid",
+        "jsidea.layout.IBoxModel"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.ISnapMode",
+      "file": "src/jsidea/layout/ISnapMode.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.layout.ISnapMode",
+        "jsidea.layout.Snap",
+        "jsidea.layout.Transform",
+        "jsidea.geom.Point3D"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.ISnapTo",
+      "file": "src/jsidea/layout/ISnapTo.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.layout.ISnapTo",
+        "jsidea.layout.IBoxModel"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.IStyleNode",
+      "file": "src/jsidea/layout/IStyleNode.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.layout.IStyleNode",
+        "jsidea.geom.Point2D"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.ITransformMode",
+      "file": "src/jsidea/layout/ITransformMode.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.layout.ITransformMode",
+        "jsidea.layout.Transform",
+        "jsidea.geom.Matrix3D"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.Move",
+      "file": "src/jsidea/layout/Move.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.layout.Move",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.IMoveLimits",
+        "jsidea.layout.IMoveMode",
+        "jsidea.layout.Transform",
+        "jsidea.layout.MoveMode.TRANSFORM",
+        "jsidea.layout.Box",
+        "jsidea.layout.BoxModel.BORDER",
+        "jsidea.math.Number",
+        "jsidea.geom.Rect2D"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.MoveMode.BACKGROUND",
+      "file": "src/jsidea/layout/MoveMode/Background.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.layout.IBoxModel",
+        "jsidea.layout.BoxModel.BACKGROUND",
+        "jsidea.geom.Rect2D",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.BoxModel.PADDING",
+        "jsidea.layout.MoveMode.BACKGROUND"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.MoveMode.BORDER_BOTTOM_RIGHT_INNER",
+      "file": "src/jsidea/layout/MoveMode/BorderBottomRightInner.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.layout.IBoxModel",
+        "jsidea.layout.BoxModel.BORDER",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point3D",
+        "jsidea.math.Number",
+        "jsidea.layout.MoveMode.BORDER_BOTTOM_RIGHT_INNER"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.MoveMode.BORDER_BOTTOM_RIGHT_OUTER",
+      "file": "src/jsidea/layout/MoveMode/BorderBottomRightOuter.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.MoveMode.BORDER_BOTTOM_RIGHT_OUTER"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.MoveMode.BORDER_TOP_LEFT",
+      "file": "src/jsidea/layout/MoveMode/BorderTopLeft.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.MoveMode.BORDER_TOP_LEFT"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.MoveMode.BOTTOM_LEFT",
+      "file": "src/jsidea/layout/MoveMode/BottomLeft.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.MoveMode.BOTTOM_RIGHT",
+        "jsidea.layout.MoveMode.TOP_LEFT",
+        "jsidea.layout.MoveMode.BOTTOM_LEFT"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.MoveMode.BOTTOM_RIGHT",
+      "file": "src/jsidea/layout/MoveMode/BottomRight.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.MoveMode.TOP_LEFT",
+        "jsidea.layout.StyleNode",
+        "jsidea.layout.IStyleNode",
+        "jsidea.math.Number",
+        "jsidea.layout.MoveMode.BOTTOM_RIGHT"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.MoveMode.CLIP",
+      "file": "src/jsidea/layout/MoveMode/Clip.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.layout.IBoxModel",
+        "jsidea.layout.BoxModel.CLIP",
+        "jsidea.geom.Rect2D",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.MoveMode.CLIP"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.MoveMode.CLIP_BOTTOM_RIGHT",
+      "file": "src/jsidea/layout/MoveMode/ClipBottomRight.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.layout.IBoxModel",
+        "jsidea.layout.BoxModel.CLIP",
+        "jsidea.geom.Rect2D",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.MoveMode.CLIP_BOTTOM_RIGHT"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.MoveMode.MARGIN_BOTTOM_RIGHT",
+      "file": "src/jsidea/layout/MoveMode/MarginBottomRight.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.geom.Point3D",
+        "jsidea.math.Number",
+        "jsidea.layout.MoveMode.MARGIN_BOTTOM_RIGHT"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.MoveMode.MARGIN_TOP_LEFT",
+      "file": "src/jsidea/layout/MoveMode/MarginTopLeft.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.geom.Point3D",
+        "jsidea.math.Number",
+        "jsidea.layout.MoveMode.MARGIN_TOP_LEFT"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.MoveMode.SCROLL",
+      "file": "src/jsidea/layout/MoveMode/Scroll.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.layout.IBoxModel",
+        "jsidea.layout.BoxModel.SCROLL",
+        "jsidea.geom.Point3D",
+        "jsidea.system.Engine",
+        "jsidea.layout.MoveMode.SCROLL"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.MoveMode.TOP_LEFT",
+      "file": "src/jsidea/layout/MoveMode/TopLeft.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.layout.Box",
+        "jsidea.geom.Point3D",
+        "jsidea.system.Engine",
+        "jsidea.layout.StyleNode",
+        "jsidea.layout.IStyleNode",
+        "jsidea.geom.Point2D",
+        "jsidea.layout.BoxModel.BORDER",
+        "jsidea.layout.BoxModel.CONTENT",
+        "jsidea.system.Browser",
+        "jsidea.math.Number",
+        "jsidea.layout.MoveMode.TOP_LEFT"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.MoveMode.TOP_LEFT_CLAMPED",
+      "file": "src/jsidea/layout/MoveMode/TopLeftClamped.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.MoveMode.TOP_LEFT",
+        "jsidea.math.Number",
+        "jsidea.layout.MoveMode.TOP_LEFT_CLAMPED"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.MoveMode.TOP_RIGHT",
+      "file": "src/jsidea/layout/MoveMode/TopRight.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.MoveMode.TOP_LEFT",
+        "jsidea.layout.MoveMode.BOTTOM_RIGHT",
+        "jsidea.layout.MoveMode.TOP_RIGHT"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.MoveMode.TRANSFORM",
+      "file": "src/jsidea/layout/MoveMode/Transform.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.IMoveMode",
+        "jsidea.geom.Matrix3D",
+        "jsidea.geom.Point3D",
+        "jsidea.system.Engine",
+        "jsidea.layout.MoveMode.TRANSFORM"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.Position",
+      "file": "src/jsidea/layout/Position.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.layout.Position",
+        "jsidea.layout.IPositionTo",
+        "jsidea.layout.IPositionFrom",
+        "jsidea.layout.Snap",
+        "jsidea.layout.Move",
+        "jsidea.layout.Transform",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.BoxModel.BORDER",
+        "jsidea.layout.Box",
+        "jsidea.math.Number",
+        "jsidea.geom.Rect2D",
+        "jsidea.math.ILimit",
+        "jsidea.geom.Matrix3D"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.Snap",
+      "file": "src/jsidea/layout/Snap.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.layout.Snap",
+        "jsidea.layout.ISnapMode",
+        "jsidea.layout.ISnapTo",
+        "jsidea.layout.ISnapGrid",
+        "jsidea.layout.Move",
+        "jsidea.layout.Transform",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.BoxModel.BORDER",
+        "jsidea.layout.SnapMode.BASIC",
+        "jsidea.layout.Box",
+        "jsidea.math.Number",
+        "jsidea.geom.Rect2D",
+        "jsidea.geom.Matrix3D"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.SnapMode.BASIC",
+      "file": "src/jsidea/layout/SnapMode/Basic.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.ISnapMode",
+        "jsidea.layout.Snap",
+        "jsidea.layout.Transform",
+        "jsidea.geom.Point3D",
+        "jsidea.math.Number",
+        "jsidea.layout.SnapMode.BASIC"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.StyleNode",
+      "file": "src/jsidea/layout/StyleNode.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.layout.StyleNode",
+        "jsidea.layout.IStyleNode",
+        "jsidea.system.Browser",
+        "jsidea.system.Engine",
+        "jsidea.math.Number",
+        "jsidea.geom.Point2D"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.Transform",
+      "file": "src/jsidea/layout/Transform.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.layout.Transform",
+        "jsidea.layout.IBoxModel",
+        "jsidea.layout.BoxModel.BORDER",
+        "jsidea.geom.Matrix3D",
+        "jsidea.layout.Box",
+        "jsidea.layout.ITransformMode",
+        "jsidea.layout.TransformMode.RECTANGLE",
+        "jsidea.layout.TransformMode.PLANAR",
+        "jsidea.geom.Point3D",
+        "jsidea.math.Number",
+        "jsidea.geom.Quad"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.TransformMode.PERSPECTIVE",
+      "file": "src/jsidea/layout/TransformMode/Perspective.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.ITransformMode",
+        "jsidea.geom.Matrix3D",
+        "jsidea.layout.Transform",
+        "jsidea.layout.StyleNode",
+        "jsidea.layout.IStyleNode",
+        "jsidea.math.Number",
+        "jsidea.geom.Point2D",
+        "jsidea.layout.TransformMode.PERSPECTIVE"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.TransformMode.PLANAR",
+      "file": "src/jsidea/layout/TransformMode/Planar.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.ITransformMode",
+        "jsidea.layout.Transform",
+        "jsidea.geom.Matrix3D",
+        "jsidea.geom.Rect2D",
+        "jsidea.system.Browser",
+        "jsidea.system.Engine",
+        "jsidea.math.Number",
+        "jsidea.layout.TransformMode.PLANAR"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.TransformMode.RECTANGLE",
+      "file": "src/jsidea/layout/TransformMode/Rectangle.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.ITransformMode",
+        "jsidea.layout.Transform",
+        "jsidea.geom.Matrix3D",
+        "jsidea.geom.Rect2D",
+        "jsidea.layout.TransformMode.RECTANGLE"
+      ]
+    },
+    {
+      "fullName": "jsidea.layout.TransformMode.TEST",
+      "file": "src/jsidea/layout/TransformMode/Test.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.layout.ITransformMode",
+        "jsidea.layout.Transform",
+        "jsidea.geom.Matrix3D",
+        "jsidea.geom.Rect2D",
+        "jsidea.layout.TransformMode.TEST"
+      ]
+    },
+    {
+      "fullName": "jsidea.math.ILimit",
+      "file": "src/jsidea/math/ILimit.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.math.ILimit"
+      ]
+    },
+    {
+      "fullName": "jsidea.math.Number",
+      "file": "src/jsidea/math/Number.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.math.Number",
+        "jsidea.geom.IPoint3DValue",
+        "jsidea.math.ILimit",
+        "jsidea.geom.IPoint2DValue"
+      ]
+    },
+    {
+      "fullName": "jsidea.model.Dictonary",
+      "file": "src/jsidea/model/Dictionary.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.model.Dictonary"
+      ]
+    },
+    {
+      "fullName": "jsidea.plugins.ISymbol",
+      "file": "src/jsidea/plugins/Dependency.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.plugins.ISymbol",
+        "jsidea.plugins.DependencyUI",
+        "jsidea.text.Text",
+        "jsidea.plugins.Dependency",
+        "jsidea.plugins.Plugin"
+      ]
+    },
+    {
+      "fullName": "jsidea.plugins.DependencyUI",
+      "file": "src/jsidea/plugins/Dependency.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.plugins.ISymbol",
+        "jsidea.plugins.DependencyUI",
+        "jsidea.text.Text",
+        "jsidea.plugins.Dependency",
+        "jsidea.plugins.Plugin"
+      ]
+    },
+    {
+      "fullName": "jsidea.plugins.Dependency",
+      "file": "src/jsidea/plugins/Dependency.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.plugins.ISymbol",
+        "jsidea.plugins.DependencyUI",
+        "jsidea.text.Text",
+        "jsidea.plugins.Dependency",
+        "jsidea.plugins.Plugin"
+      ]
+    },
+    {
+      "fullName": "jsidea.plugins.Plugin",
+      "file": "src/jsidea/plugins/Plugin.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.plugins.Plugin",
+        "jsidea.events.EventDispatcher"
+      ]
+    },
+    {
+      "fullName": "jsidea.plugins.Runner",
+      "file": "src/jsidea/plugins/Runner.ts",
+      "kind": 211,
+      "imports": [
+        "jsidea.plugins.Runner"
+      ]
+    },
+    {
+      "fullName": "jsidea.plugins.Simbox",
+      "file": "src/jsidea/plugins/Simbox.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.plugins.Simbox",
+        "jsidea.plugins.Plugin",
+        "jsidea.geom.Matrix3D",
+        "jsidea.geom.Point3D"
+      ]
+    },
+    {
+      "fullName": "jsidea.plugins.Test",
+      "file": "src/jsidea/plugins/Test.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.plugins.Test",
+        "jsidea.plugins.Plugin",
+        "jsidea.layout.Transform",
+        "jsidea.layout.BoxModel.BORDER",
+        "jsidea.geom.Point3D",
+        "jsidea.layout.MoveMode.TRANSFORM",
+        "jsidea.layout.Snap",
+        "jsidea.layout.ISnapGrid",
+        "jsidea.layout.BoxModel.PADDING",
+        "jsidea.layout.ISnapTo",
+        "jsidea.layout.IMoveMode",
+        "jsidea.layout.Position",
+        "jsidea.layout.Move",
+        "jsidea.layout.IPositionTo",
+        "jsidea.geom.Rect2D",
+        "jsidea.layout.Box",
+        "jsidea.display.Graphics",
+        "jsidea.layout.StyleNode",
+        "jsidea.geom.Point2D",
+        "jsidea.layout.IStyleNode",
+        "jsidea.text.Text",
+        "jsidea.events.EventDispatcher"
+      ]
+    },
+    {
+      "fullName": "jsidea.system.Browser",
+      "file": "src/jsidea/system/Browser.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.system.Browser"
+      ]
+    },
+    {
+      "fullName": "jsidea.system.Engine",
+      "file": "src/jsidea/system/Engine.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.system.Engine",
+        "jsidea.system.Browser"
+      ]
+    },
+    {
+      "fullName": "jsidea.system.System",
+      "file": "src/jsidea/system/System.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.system.System"
+      ]
+    },
+    {
+      "fullName": "jsidea.text.Text",
+      "file": "src/jsidea/text/Text.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.text.Text",
+        "jsidea.math.Number"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "name": "src/definitions/jsidea.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/action/Cursor.ts",
+      "size": 826
+    },
+    {
+      "name": "src/jsidea/action/EventCircuit.ts",
+      "size": 825
+    },
+    {
+      "name": "src/jsidea/display/Graphics.ts",
+      "size": 3362
+    },
+    {
+      "name": "src/jsidea/events/EventDispatcher.ts",
+      "size": 2253
+    },
+    {
+      "name": "src/jsidea/events/Events.ts",
+      "size": 892
+    },
+    {
+      "name": "src/jsidea/events/IEventDispatcher.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/events/IEventListener.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/geom/AffineFit.ts",
+      "size": 6977
+    },
+    {
+      "name": "src/jsidea/geom/IComposition2D.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/geom/IComposition3D.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/geom/IMatrix2DValue.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/geom/IMatrix3DValue.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/geom/IPoint2DValue.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/geom/IPoint3DValue.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/geom/IQuadValue.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/geom/IRect2DValue.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/geom/Matrix2D.ts",
+      "size": 17363
+    },
+    {
+      "name": "src/jsidea/geom/Matrix3D.ts",
+      "size": 33434
+    },
+    {
+      "name": "src/jsidea/geom/Point2D.ts",
+      "size": 7555
+    },
+    {
+      "name": "src/jsidea/geom/Point3D.ts",
+      "size": 9907
+    },
+    {
+      "name": "src/jsidea/geom/Quad.ts",
+      "size": 4147
+    },
+    {
+      "name": "src/jsidea/geom/Rect2D.ts",
+      "size": 6903
+    },
+    {
+      "name": "src/jsidea/layout/Box.ts",
+      "size": 8432
+    },
+    {
+      "name": "src/jsidea/layout/BoxModel/Attachment.ts",
+      "size": 3241
+    },
+    {
+      "name": "src/jsidea/layout/BoxModel/Background.ts",
+      "size": 5344
+    },
+    {
+      "name": "src/jsidea/layout/BoxModel/Border.ts",
+      "size": 969
+    },
+    {
+      "name": "src/jsidea/layout/BoxModel/Canvas.ts",
+      "size": 3258
+    },
+    {
+      "name": "src/jsidea/layout/BoxModel/Clip.ts",
+      "size": 1549
+    },
+    {
+      "name": "src/jsidea/layout/BoxModel/Content.ts",
+      "size": 1403
+    },
+    {
+      "name": "src/jsidea/layout/BoxModel/Image.ts",
+      "size": 2198
+    },
+    {
+      "name": "src/jsidea/layout/BoxModel/Margin.ts",
+      "size": 1237
+    },
+    {
+      "name": "src/jsidea/layout/BoxModel/NormalDeviceCoordinates.ts",
+      "size": 1643
+    },
+    {
+      "name": "src/jsidea/layout/BoxModel/Padding.ts",
+      "size": 1251
+    },
+    {
+      "name": "src/jsidea/layout/BoxModel/Scroll.ts",
+      "size": 1661
+    },
+    {
+      "name": "src/jsidea/layout/IBoxModel.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/layout/IMoveLimits.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/layout/IMoveMode.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/layout/IPositionFrom.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/layout/IPositionTo.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/layout/ISnapGrid.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/layout/ISnapMode.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/layout/ISnapTo.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/layout/IStyleNode.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/layout/ITransformMode.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/layout/Move.ts",
+      "size": 1926
+    },
+    {
+      "name": "src/jsidea/layout/MoveMode/Background.ts",
+      "size": 1497
+    },
+    {
+      "name": "src/jsidea/layout/MoveMode/BorderBottomRightInner.ts",
+      "size": 3460
+    },
+    {
+      "name": "src/jsidea/layout/MoveMode/BorderBottomRightOuter.ts",
+      "size": 2120
+    },
+    {
+      "name": "src/jsidea/layout/MoveMode/BorderTopLeft.ts",
+      "size": 1620
+    },
+    {
+      "name": "src/jsidea/layout/MoveMode/BottomLeft.ts",
+      "size": 1653
+    },
+    {
+      "name": "src/jsidea/layout/MoveMode/BottomRight.ts",
+      "size": 4733
+    },
+    {
+      "name": "src/jsidea/layout/MoveMode/Clip.ts",
+      "size": 1599
+    },
+    {
+      "name": "src/jsidea/layout/MoveMode/ClipBottomRight.ts",
+      "size": 1790
+    },
+    {
+      "name": "src/jsidea/layout/MoveMode/MarginBottomRight.ts",
+      "size": 1726
+    },
+    {
+      "name": "src/jsidea/layout/MoveMode/MarginTopLeft.ts",
+      "size": 1516
+    },
+    {
+      "name": "src/jsidea/layout/MoveMode/Scroll.ts",
+      "size": 1971
+    },
+    {
+      "name": "src/jsidea/layout/MoveMode/TopLeft.ts",
+      "size": 6284
+    },
+    {
+      "name": "src/jsidea/layout/MoveMode/TopLeftClamped.ts",
+      "size": 2320
+    },
+    {
+      "name": "src/jsidea/layout/MoveMode/TopRight.ts",
+      "size": 1627
+    },
+    {
+      "name": "src/jsidea/layout/MoveMode/Transform.ts",
+      "size": 1516
+    },
+    {
+      "name": "src/jsidea/layout/Position.ts",
+      "size": 4354
+    },
+    {
+      "name": "src/jsidea/layout/Snap.ts",
+      "size": 2519
+    },
+    {
+      "name": "src/jsidea/layout/SnapMode/Basic.ts",
+      "size": 760
+    },
+    {
+      "name": "src/jsidea/layout/StyleNode.ts",
+      "size": 16552
+    },
+    {
+      "name": "src/jsidea/layout/Transform.ts",
+      "size": 7396
+    },
+    {
+      "name": "src/jsidea/layout/TransformMode/Perspective.ts",
+      "size": 3206
+    },
+    {
+      "name": "src/jsidea/layout/TransformMode/Planar.ts",
+      "size": 2876
+    },
+    {
+      "name": "src/jsidea/layout/TransformMode/Rectangle.ts",
+      "size": 794
+    },
+    {
+      "name": "src/jsidea/layout/TransformMode/Test.ts",
+      "size": 1595
+    },
+    {
+      "name": "src/jsidea/math/ILimit.ts",
+      "size": 0
+    },
+    {
+      "name": "src/jsidea/math/Number.ts",
+      "size": 4768
+    },
+    {
+      "name": "src/jsidea/model/Dictionary.ts",
+      "size": 2449
+    },
+    {
+      "name": "src/jsidea/plugins/Dependency.ts",
+      "size": 7704
+    },
+    {
+      "name": "src/jsidea/plugins/Plugin.ts",
+      "size": 4210
+    },
+    {
+      "name": "src/jsidea/plugins/Runner.ts",
+      "size": 1111
+    },
+    {
+      "name": "src/jsidea/plugins/Simbox.ts",
+      "size": 4140
+    },
+    {
+      "name": "src/jsidea/plugins/Test.ts",
+      "size": 8702
+    },
+    {
+      "name": "src/jsidea/system/Browser.ts",
+      "size": 4319
+    },
+    {
+      "name": "src/jsidea/system/Engine.ts",
+      "size": 1329
+    },
+    {
+      "name": "src/jsidea/system/System.ts",
+      "size": 1360
+    },
+    {
+      "name": "src/jsidea/text/Text.ts",
+      "size": 2144
+    }
+  ]
+}
