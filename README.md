@@ -1,2 +1,2 @@
-# jsidea-web
-jsidea web
+# jsidea-website
+jsidea website
