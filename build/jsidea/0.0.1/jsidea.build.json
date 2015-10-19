@@ -1,7 +1,7 @@
 {
   "project": {
     "name": "jsidea",
-    "url": "https://raw.githubusercontent.com/jsidea/jsidea/01d2868f284976e28e1a6382555fbf3f0e6ee3fa/"
+    "url": "https://raw.githubusercontent.com/jsidea/jsidea/437e05a4cc5454f7b593bb4d813704397253cf3c/"
   },
   "typescript": [
     {
@@ -235,6 +235,35 @@
       "kind": 213,
       "imports": [
         "jsidea.events.IEventListener"
+      ]
+    },
+    {
+      "fullName": "jsidea.events.Signal",
+      "file": "src/jsidea/events/Signal.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.events.Slot",
+        "jsidea.events.Signal"
+      ]
+    },
+    {
+      "fullName": "jsidea.events.ISlot",
+      "file": "src/jsidea/events/Slot.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.events.ISlot",
+        "jsidea.events.Slot",
+        "jsidea.events.Signal"
+      ]
+    },
+    {
+      "fullName": "jsidea.events.Slot",
+      "file": "src/jsidea/events/Slot.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.events.ISlot",
+        "jsidea.events.Slot",
+        "jsidea.events.Signal"
       ]
     },
     {
@@ -1038,15 +1067,6 @@
       ]
     },
     {
-      "fullName": "jsidea.model.Converter.Json",
-      "file": "src/jsidea/model/Converter/Json.ts",
-      "kind": 209,
-      "imports": [
-        "jsidea.model.IConverter",
-        "jsidea.model.Converter.Json"
-      ]
-    },
-    {
       "fullName": "jsidea.model.Dictonary",
       "file": "src/jsidea/model/Dictionary.ts",
       "kind": 212,
@@ -1055,57 +1075,160 @@
       ]
     },
     {
-      "fullName": "jsidea.model.IConverter",
-      "file": "src/jsidea/model/IConverter.ts",
+      "fullName": "jsidea.model.ILoader",
+      "file": "src/jsidea/model/ILoader.ts",
       "kind": 213,
       "imports": [
-        "jsidea.model.IConverter"
+        "jsidea.model.ILoader",
+        "jsidea.model.Request"
       ]
     },
     {
-      "fullName": "jsidea.model.LoaderMethod",
-      "file": "src/jsidea/model/Loader.ts",
+      "fullName": "jsidea.model.IReader",
+      "file": "src/jsidea/model/IReader.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.model.IReader"
+      ]
+    },
+    {
+      "fullName": "jsidea.model.IWriter",
+      "file": "src/jsidea/model/IWriter.ts",
+      "kind": 213,
+      "imports": [
+        "jsidea.model.IWriter"
+      ]
+    },
+    {
+      "fullName": "jsidea.model.Loader.AJAX",
+      "file": "src/jsidea/model/Loader/Ajax.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.model.ILoader",
+        "jsidea.model.Request",
+        "jsidea.model.IWriter",
+        "jsidea.model.RequestState",
+        "jsidea.model.IReader",
+        "jsidea.model.RequestMethod",
+        "jsidea.model.URL",
+        "jsidea.model.Loader.AJAX"
+      ]
+    },
+    {
+      "fullName": "jsidea.model.Loader.JSONP",
+      "file": "src/jsidea/model/Loader/JsonP.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.model.ILoader",
+        "jsidea.model.URL",
+        "jsidea.model.Request",
+        "jsidea.model.IReader",
+        "jsidea.model.RequestState",
+        "jsidea.model.Loader.JSONP"
+      ]
+    },
+    {
+      "fullName": "jsidea.model.Reader.ARRAY_BUFFER",
+      "file": "src/jsidea/model/Reader/ArrayBuffer.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.model.IReader",
+        "jsidea.model.Reader.ARRAY_BUFFER"
+      ]
+    },
+    {
+      "fullName": "jsidea.model.Reader.BLOB",
+      "file": "src/jsidea/model/Reader/Blob.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.model.IReader",
+        "jsidea.model.Reader.BLOB"
+      ]
+    },
+    {
+      "fullName": "jsidea.model.Reader.JSON",
+      "file": "src/jsidea/model/Reader/Json.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.model.IReader",
+        "jsidea.model.Reader.JSON"
+      ]
+    },
+    {
+      "fullName": "jsidea.model.Reader.TEXT",
+      "file": "src/jsidea/model/Reader/Text.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.model.IReader",
+        "jsidea.model.Reader.TEXT"
+      ]
+    },
+    {
+      "fullName": "jsidea.model.RequestMethod",
+      "file": "src/jsidea/model/Request.ts",
       "kind": 215,
       "imports": [
-        "jsidea.model.LoaderMethod",
-        "jsidea.model.Loader",
-        "jsidea.events.EventDispatcher",
-        "jsidea.model.URLRequest"
+        "jsidea.model.RequestMethod",
+        "jsidea.model.RequestState",
+        "jsidea.model.Request",
+        "jsidea.model.URL",
+        "jsidea.model.IWriter",
+        "jsidea.model.IReader",
+        "jsidea.model.Reader.JSON",
+        "jsidea.model.ILoader",
+        "jsidea.model.Loader.AJAX",
+        "jsidea.events.Signal"
       ]
     },
     {
-      "fullName": "jsidea.model.Loader",
-      "file": "src/jsidea/model/Loader.ts",
-      "kind": 212,
-      "imports": [
-        "jsidea.model.LoaderMethod",
-        "jsidea.model.Loader",
-        "jsidea.events.EventDispatcher",
-        "jsidea.model.URLRequest"
-      ]
-    },
-    {
-      "fullName": "jsidea.model.URLMethod",
-      "file": "src/jsidea/model/URLRequest.ts",
+      "fullName": "jsidea.model.RequestState",
+      "file": "src/jsidea/model/Request.ts",
       "kind": 215,
       "imports": [
-        "jsidea.model.URLMethod",
-        "jsidea.model.URLRequest",
-        "jsidea.events.EventDispatcher",
-        "jsidea.model.IConverter",
-        "jsidea.model.Converter.Json"
+        "jsidea.model.RequestMethod",
+        "jsidea.model.RequestState",
+        "jsidea.model.Request",
+        "jsidea.model.URL",
+        "jsidea.model.IWriter",
+        "jsidea.model.IReader",
+        "jsidea.model.Reader.JSON",
+        "jsidea.model.ILoader",
+        "jsidea.model.Loader.AJAX",
+        "jsidea.events.Signal"
       ]
     },
     {
-      "fullName": "jsidea.model.URLRequest",
-      "file": "src/jsidea/model/URLRequest.ts",
+      "fullName": "jsidea.model.Request",
+      "file": "src/jsidea/model/Request.ts",
       "kind": 212,
       "imports": [
-        "jsidea.model.URLMethod",
-        "jsidea.model.URLRequest",
-        "jsidea.events.EventDispatcher",
-        "jsidea.model.IConverter",
-        "jsidea.model.Converter.Json"
+        "jsidea.model.RequestMethod",
+        "jsidea.model.RequestState",
+        "jsidea.model.Request",
+        "jsidea.model.URL",
+        "jsidea.model.IWriter",
+        "jsidea.model.IReader",
+        "jsidea.model.Reader.JSON",
+        "jsidea.model.ILoader",
+        "jsidea.model.Loader.AJAX",
+        "jsidea.events.Signal"
+      ]
+    },
+    {
+      "fullName": "jsidea.model.URL",
+      "file": "src/jsidea/model/URL.ts",
+      "kind": 212,
+      "imports": [
+        "jsidea.model.URL"
+      ]
+    },
+    {
+      "fullName": "jsidea.model.Writer.JSON",
+      "file": "src/jsidea/model/Writer/Json.ts",
+      "kind": 209,
+      "imports": [
+        "jsidea.model.IWriter",
+        "jsidea.model.Writer.JSON"
       ]
     },
     {
@@ -1122,9 +1245,7 @@
         "jsidea.plugins.ModuleUI",
         "jsidea.plugins.Builder",
         "jsidea.plugins.Plugin",
-        "jsidea.model.URLRequest",
-        "jsidea.events.EventDispatcher",
-        "jsidea.action.Drag",
+        "jsidea.model.Request",
         "jsidea.build.FileSystem",
         "jsidea.build.Usage.TYPESCRIPT",
         "jsidea.build.IUsageResult"
@@ -1144,9 +1265,7 @@
         "jsidea.plugins.ModuleUI",
         "jsidea.plugins.Builder",
         "jsidea.plugins.Plugin",
-        "jsidea.model.URLRequest",
-        "jsidea.events.EventDispatcher",
-        "jsidea.action.Drag",
+        "jsidea.model.Request",
         "jsidea.build.FileSystem",
         "jsidea.build.Usage.TYPESCRIPT",
         "jsidea.build.IUsageResult"
@@ -1166,9 +1285,7 @@
         "jsidea.plugins.ModuleUI",
         "jsidea.plugins.Builder",
         "jsidea.plugins.Plugin",
-        "jsidea.model.URLRequest",
-        "jsidea.events.EventDispatcher",
-        "jsidea.action.Drag",
+        "jsidea.model.Request",
         "jsidea.build.FileSystem",
         "jsidea.build.Usage.TYPESCRIPT",
         "jsidea.build.IUsageResult"
@@ -1188,9 +1305,7 @@
         "jsidea.plugins.ModuleUI",
         "jsidea.plugins.Builder",
         "jsidea.plugins.Plugin",
-        "jsidea.model.URLRequest",
-        "jsidea.events.EventDispatcher",
-        "jsidea.action.Drag",
+        "jsidea.model.Request",
         "jsidea.build.FileSystem",
         "jsidea.build.Usage.TYPESCRIPT",
         "jsidea.build.IUsageResult"
@@ -1210,9 +1325,7 @@
         "jsidea.plugins.ModuleUI",
         "jsidea.plugins.Builder",
         "jsidea.plugins.Plugin",
-        "jsidea.model.URLRequest",
-        "jsidea.events.EventDispatcher",
-        "jsidea.action.Drag",
+        "jsidea.model.Request",
         "jsidea.build.FileSystem",
         "jsidea.build.Usage.TYPESCRIPT",
         "jsidea.build.IUsageResult"
@@ -1232,9 +1345,7 @@
         "jsidea.plugins.ModuleUI",
         "jsidea.plugins.Builder",
         "jsidea.plugins.Plugin",
-        "jsidea.model.URLRequest",
-        "jsidea.events.EventDispatcher",
-        "jsidea.action.Drag",
+        "jsidea.model.Request",
         "jsidea.build.FileSystem",
         "jsidea.build.Usage.TYPESCRIPT",
         "jsidea.build.IUsageResult"
@@ -1254,9 +1365,7 @@
         "jsidea.plugins.ModuleUI",
         "jsidea.plugins.Builder",
         "jsidea.plugins.Plugin",
-        "jsidea.model.URLRequest",
-        "jsidea.events.EventDispatcher",
-        "jsidea.action.Drag",
+        "jsidea.model.Request",
         "jsidea.build.FileSystem",
         "jsidea.build.Usage.TYPESCRIPT",
         "jsidea.build.IUsageResult"
@@ -1276,9 +1385,7 @@
         "jsidea.plugins.ModuleUI",
         "jsidea.plugins.Builder",
         "jsidea.plugins.Plugin",
-        "jsidea.model.URLRequest",
-        "jsidea.events.EventDispatcher",
-        "jsidea.action.Drag",
+        "jsidea.model.Request",
         "jsidea.build.FileSystem",
         "jsidea.build.Usage.TYPESCRIPT",
         "jsidea.build.IUsageResult"
@@ -1384,7 +1491,7 @@
       "name": "src/definitions/jsidea.ts",
       "size": 0,
       "sizeMinified": 0,
-      "code": "interface HTMLElement {\r\n    matches(selector: string): boolean;\r\n}\r\n\r\ninterface Object {\r\n    observe(beingObserved: any, callback: (update: any) => any, types?: string[]): void;\r\n}\r\n\r\ninterface CSSStyleDeclaration {\r\n    willChange: string;\r\n}\r\n\r\ninterface MSStyleCSSProperties {\r\n    willChange: string;\r\n}\r\n\r\ninterface CanvasRenderingContext2D {\r\n    getTransform(): number[];\r\n}\r\n\r\ninterface HTMLCanvasElement {\r\n    hasContext(): string;\r\n}"
+      "code": "interface HTMLElement {\r\n    matches(selector: string): boolean;\r\n}\r\n\r\ninterface Window {\r\n    JSON: JSON;\r\n}\r\n\r\ninterface Object {\r\n    observe(beingObserved: any, callback: (update: any) => any, types?: string[]): void;\r\n}\r\n\r\ninterface CSSStyleDeclaration {\r\n    willChange: string;\r\n}\r\n\r\ninterface MSStyleCSSProperties {\r\n    willChange: string;\r\n}\r\n\r\ninterface CanvasRenderingContext2D {\r\n    getTransform(): number[];\r\n}\r\n\r\ninterface HTMLCanvasElement {\r\n    hasContext(): string;\r\n}"
     },
     {
       "name": "src/jsidea/action/Cursor.ts",
@@ -1466,9 +1573,9 @@
     },
     {
       "name": "src/jsidea/build/Minify/JavaScript.ts",
-      "size": 4264,
+      "size": 4289,
       "sizeMinified": 1454,
-      "code": "namespace jsidea.build.Minify {\r\n    export interface IJavaScriptOptions extends UglifyJS.IOptions{\r\n\r\n    }\r\n    class JavaScriptMinify {\r\n        //SOURCE: https://gist.github.com/jpillora/5652641\r\n        //SOURCE: https://github.com/mishoo/UglifyJS2/blob/master/tools/node.js#L52\r\n        public apply(files: IFile[], options: IJavaScriptOptions): IMinifyResult {\r\n            options = UglifyJS.defaults(options, {\r\n                outSourceMap: null,\r\n                sourceRoot: null,\r\n                inSourceMap: null,\r\n                fromString: false,\r\n                warnings: false,\r\n                mangle: {},\r\n                output: null,\r\n                compress: {}\r\n            });\r\n            UglifyJS.base54.reset();\r\n\r\n            // 1. parse\r\n            var haveScope = false;\r\n            var toplevel = null,\r\n                sourcesContent = {};\r\n\r\n            files.forEach(function(file, i) {\r\n                var code = file.code;\r\n                sourcesContent[file.name] = code;\r\n                toplevel = UglifyJS.parse(code, {\r\n                    filename: options.fromString ? i : file.name,\r\n                    toplevel: toplevel\r\n                });\r\n            });\r\n\r\n            if (options.wrap)\r\n                toplevel = toplevel.wrap_commonjs(options.wrap, options.exportAll);\r\n\r\n            // 2. compress\r\n            if (options.compress) {\r\n                var compress = { warnings: options.warnings };\r\n                UglifyJS.merge(compress, options.compress);\r\n                toplevel.figure_out_scope();\r\n                haveScope = true;\r\n                var sq = UglifyJS.Compressor(compress);\r\n                toplevel = toplevel.transform(sq);\r\n            }\r\n\r\n            // 3. mangle\r\n            if (options.mangle) {\r\n                toplevel.figure_out_scope(options.mangle);\r\n                haveScope = true;\r\n                toplevel.compute_char_frequency(options.mangle);\r\n                toplevel.mangle_names(options.mangle);\r\n            }\r\n\r\n            // 4. scope (if needed)\r\n            if (!haveScope)\r\n                toplevel.figure_out_scope();\r\n\r\n            // 5. output\r\n            var inMap = options.inSourceMap;\r\n            var output: any = {};\r\n            if (typeof options.inSourceMap == \"string\")\r\n                inMap = options.inSourceMap;\r\n\r\n            if (options.outSourceMap) {\r\n                output.source_map = UglifyJS.SourceMap({\r\n                    file: options.outSourceMap,\r\n                    orig: inMap,\r\n                    root: options.sourceRoot\r\n                });\r\n                if (options.sourceMapIncludeSources) {\r\n                    for (var file in sourcesContent) {\r\n                        if (sourcesContent.hasOwnProperty(file))\r\n                            output.source_map.get().setSourceContent(file, sourcesContent[file]);\r\n                    }\r\n                }\r\n\r\n            }\r\n            if (options.output)\r\n                UglifyJS.merge(output, options.output);\r\n\r\n            var stream = UglifyJS.OutputStream(output);\r\n            toplevel.print(stream);\r\n\r\n            stream = stream.toString();\r\n            if (options.outSourceMap && \"string\" === typeof options.outSourceMap)\r\n                stream += \"\\n//# sourceMappingURL=\" + options.outSourceMap;\r\n\r\n            var source_map = output.source_map;\r\n            if (source_map)\r\n                source_map = source_map + \"\";\r\n\r\n            return {\r\n                code: stream,\r\n                map: source_map\r\n            };\r\n        }\r\n    }\r\n\r\n    export var JAVASCRIPT = new JavaScriptMinify();\r\n}\r\n\r\nif (UglifyJS)\r\n    UglifyJS.AST_Node.warn_function = (txt) => console.warn(txt);"
+      "code": "namespace jsidea.build.Minify {\r\n    export interface IJavaScriptOptions extends UglifyJS.IOptions {\r\n\r\n    }\r\n    class JavaScriptMinify {\r\n        //SOURCE: https://gist.github.com/jpillora/5652641\r\n        //SOURCE: https://github.com/mishoo/UglifyJS2/blob/master/tools/node.js#L52\r\n        public apply(files: IFile[], options: IJavaScriptOptions): IMinifyResult {\r\n            options = UglifyJS.defaults(options, {\r\n                outSourceMap: null,\r\n                sourceRoot: null,\r\n                inSourceMap: null,\r\n                fromString: false,\r\n                warnings: false,\r\n                mangle: {},\r\n                output: null,\r\n                compress: {}\r\n            });\r\n            UglifyJS.base54.reset();\r\n\r\n            // 1. parse\r\n            var haveScope = false;\r\n            var toplevel: any = null;\r\n            var sourcesContent: any = {};\r\n\r\n            files.forEach(function(file, i) {\r\n                var code = file.code;\r\n                sourcesContent[file.name] = code;\r\n                toplevel = UglifyJS.parse(code, {\r\n                    filename: options.fromString ? i : file.name,\r\n                    toplevel: toplevel\r\n                });\r\n            });\r\n\r\n            if (options.wrap)\r\n                toplevel = toplevel.wrap_commonjs(options.wrap, options.exportAll);\r\n\r\n            // 2. compress\r\n            if (options.compress) {\r\n                var compress = { warnings: options.warnings };\r\n                UglifyJS.merge(compress, options.compress);\r\n                toplevel.figure_out_scope();\r\n                haveScope = true;\r\n                var sq = UglifyJS.Compressor(compress);\r\n                toplevel = toplevel.transform(sq);\r\n            }\r\n\r\n            // 3. mangle\r\n            if (options.mangle) {\r\n                toplevel.figure_out_scope(options.mangle);\r\n                haveScope = true;\r\n                toplevel.compute_char_frequency(options.mangle);\r\n                toplevel.mangle_names(options.mangle);\r\n            }\r\n\r\n            // 4. scope (if needed)\r\n            if (!haveScope)\r\n                toplevel.figure_out_scope();\r\n\r\n            // 5. output\r\n            var inMap = options.inSourceMap;\r\n            var output: any = {};\r\n            if (typeof options.inSourceMap == \"string\")\r\n                inMap = options.inSourceMap;\r\n\r\n            if (options.outSourceMap) {\r\n                output.source_map = UglifyJS.SourceMap({\r\n                    file: options.outSourceMap,\r\n                    orig: inMap,\r\n                    root: options.sourceRoot\r\n                });\r\n                if (options.sourceMapIncludeSources) {\r\n                    for (var file in sourcesContent) {\r\n                        if (sourcesContent.hasOwnProperty(file))\r\n                            output.source_map.get().setSourceContent(file, sourcesContent[file]);\r\n                    }\r\n                }\r\n\r\n            }\r\n            if (options.output)\r\n                UglifyJS.merge(output, options.output);\r\n\r\n            var stream = UglifyJS.OutputStream(output);\r\n            toplevel.print(stream);\r\n\r\n            stream = stream.toString();\r\n            if (options.outSourceMap && \"string\" === typeof options.outSourceMap)\r\n                stream += \"\\n//# sourceMappingURL=\" + options.outSourceMap;\r\n\r\n            var source_map = output.source_map;\r\n            if (source_map)\r\n                source_map = source_map + \"\";\r\n\r\n            return {\r\n                code: stream,\r\n                map: source_map\r\n            };\r\n        }\r\n    }\r\n\r\n    export var JAVASCRIPT = new JavaScriptMinify();\r\n}\r\n\r\nif (UglifyJS)\r\n    UglifyJS.AST_Node.warn_function = (txt: string) => console.warn(txt);"
     },
     {
       "name": "src/jsidea/build/Usage/TypeScript.ts",
@@ -1505,6 +1612,18 @@
       "size": 0,
       "sizeMinified": 0,
       "code": "namespace jsidea.events {\r\n    export interface IEventListener extends Function {\r\n        (e?: Event): any;\r\n    }\r\n}"
+    },
+    {
+      "name": "src/jsidea/events/Signal.ts",
+      "size": 1362,
+      "sizeMinified": 549,
+      "code": "namespace jsidea.events {\r\n    interface ISignal {\r\n        clear(): void;\r\n    }\r\n    interface ISignal1<Data0> extends ISignal {\r\n        add(listener: (data: Data0) => void): Slot;\r\n        invoke(p0: Data0): void;\r\n    }\r\n    interface ISignal2<Data0, Data1> extends ISignal {\r\n        add(listener: (data0: Data0, data1: Data1) => void): Slot;\r\n        invoke(p0: Data0, p1: Data1): void;\r\n    }\r\n    interface ISignal3<Data0, Data1, Data2> extends ISignal {\r\n        add(listener: (data0: Data0, data1: Data1, data2: Data2) => void): Slot;\r\n        invoke(p0: Data0, p1: Data1, p2: Data2): void;\r\n    }\r\n    interface ISignal4<Data0, Data1, Data2, Data3> extends ISignal {\r\n        add(listener: (data0: Data0, data1: Data1, data2: Data2, data3: Data3) => void): Slot;\r\n        invoke(p0: Data0, p1: Data1, p2: Data2, p3: Data3): void;\r\n    }\r\n    interface ISignal5<Data0, Data1, Data2, Data3, Data4> extends ISignal {\r\n        add(listener: (data0: Data0, data1: Data1, data2: Data2, data3: Data3, data4: Data4) => void): Slot;\r\n        invoke(p0: Data0, p1: Data1, p2: Data2, p3: Data3, p4: Data4): void;\r\n    }\r\n    export class Signal {\r\n        private _slots: Slot[] = [];\r\n\r\n        public add(listener: (...args: any[]) => void): Slot {\r\n            var slot = new Slot(this, listener);\r\n            this._slots.push(slot);\r\n            return slot;\r\n        }\r\n\r\n        public invoke(...args: any[]): void {\r\n            var l = this._slots.length;\r\n            for (var i = 0; i < l; ++i) {\r\n                var slot = this._slots[i];\r\n                slot.invoke(args);\r\n                if (l != this._slots.length) {\r\n                    i--;\r\n                    l--;\r\n                }\r\n            }\r\n        }\r\n\r\n        public clear(): void {\r\n            this._slots.splice(0, this._slots.length);\r\n        }\r\n\r\n        public static create<T0>(): ISignal1<T0>;\r\n        public static create<T0, T1>(): ISignal2<T0, T1>;\r\n        public static create<T0, T1, T2>(): ISignal3<T0, T1, T2>;\r\n        public static create<T0, T1, T2, T3>(): ISignal4<T0, T1, T2, T3>;\r\n        public static create<T0, T1, T2, T3, T4>(): ISignal5<T0, T1, T2, T3, T4>;\r\n        public static create(): Signal {\r\n            return new Signal();\r\n        }\r\n    }\r\n}"
+    },
+    {
+      "name": "src/jsidea/events/Slot.ts",
+      "size": 1872,
+      "sizeMinified": 848,
+      "code": "namespace jsidea.events {\r\n    export interface ISlot {\r\n        remove(): void;\r\n        once(): void;\r\n        count(count: number): void;\r\n        scope(scope: any): void;\r\n    }\r\n    export class Slot {\r\n\r\n        private _signal: Signal;\r\n        private _listener: (...args: any[]) => void;\r\n        private _once: boolean = false;\r\n        private _count: number = 0;\r\n        private _maxCount: number = 0;\r\n        private _scope: any = null;\r\n        private _time: number = 0;\r\n\r\n        constructor(signal: Signal, listener: (...args: any[]) => void) {\r\n            this._signal = signal;\r\n            this._listener = listener;\r\n        }\r\n        public scope(scope: any): Slot {\r\n            this._scope = scope;\r\n            return this;\r\n        }\r\n\r\n        public once(): Slot {\r\n            this._once = true;\r\n            return this;\r\n        }\r\n\r\n        public count(count: number): Slot {\r\n            this._maxCount = count;\r\n            return this;\r\n        }\r\n\r\n        public duration(duration: number): Slot {\r\n            this._time = Date.now() + duration;\r\n            return this;\r\n        }\r\n\r\n        public invoke(args: any[]): Slot {\r\n            if (this._time && Date.now() > this._time)\r\n                return this.dispose();\r\n            this._listener.apply(this._scope, args);\r\n            this._count++;\r\n            if (this._once || (this._maxCount && this._count >= this._maxCount))\r\n                return this.dispose();\r\n            return this;\r\n        }\r\n\r\n        public dispose(): Slot {\r\n            var slots: Slot[] = (<any>this._signal)._slots;\r\n            slots.splice(slots.indexOf(this), 1);\r\n            this._signal = null;\r\n            this._listener = null;\r\n            return this;\r\n        }\r\n    }\r\n}"
     },
     {
       "name": "src/jsidea/geom/IComposition2D.ts",
@@ -1897,40 +2016,88 @@
       "code": "namespace jsidea.math {\r\n    export class Number {\r\n\r\n        public static RAD_TO_DEG: number = 180 / Math.PI;\r\n        public static DEG_TO_RAD: number = Math.PI / 180;\r\n        public static BYTE_TO_KILOBYTE: number = 0.000976563;\r\n        public static BYTE_TO_MB: number = 9.53674e-7;\r\n        public static BYTE_TO_GIGABYTE: number = 9.31323e-10;\r\n\r\n        public static precision(num: number, precesion: number): number {\r\n            return Math.round(num * precesion) / precesion;\r\n        }\r\n\r\n        public static relation(value: any, relativeSize: number, defaultValue: number): number {\r\n            if (typeof value == \"number\") {\r\n                return value;\r\n            }\r\n            else if (typeof value == \"string\") {\r\n                value = (<string>value).trim().toLowerCase();\r\n                if (value.indexOf(\"%\") > 0) {\r\n                    return (Number.parse(value.replace(\"%\", \"\"), defaultValue) / 100) * relativeSize;\r\n                }\r\n                else if (value.indexOf(\"px\") > 0 || value.indexOf(\"pt\") > 0) {\r\n                    return Number.parse(value.replace(\"px\", \"\"), defaultValue);\r\n                }\r\n                else if (value.indexOf(\"vw\") > 0) {\r\n                    return (Number.parse(value.replace(\"vw\", \"\"), defaultValue) / 100) * window.innerWidth;\r\n                }\r\n                else if (value.indexOf(\"vh\") > 0) {\r\n                    return (Number.parse(value.replace(\"vh\", \"\"), defaultValue) / 100) * window.innerHeight;\r\n                }\r\n                else if (value.indexOf(\"vm\") > 0) {\r\n                    return (Number.parse(value.replace(\"vm\", \"\"), defaultValue) / 100) * Math.min(window.innerWidth, window.innerHeight);\r\n                }\r\n                else if (value.indexOf(\"em\") > 0) {\r\n                    return Number.parse(value.replace(\"em\", \"\"), defaultValue);\r\n                }\r\n                else if (value == \"top\" || value == \"left\")\r\n                    return 0;\r\n                else if (value == \"center\" || value == \"middle\")\r\n                    return relativeSize * 0.5;\r\n                else if (value == \"bottom\" || value == \"right\")\r\n                    return relativeSize;\r\n                return defaultValue;\r\n            }\r\n            return defaultValue;\r\n        }\r\n\r\n        public static parse(value: any, defaultValue: number): number {\r\n            value = parseFloat(value);\r\n            if (isNaN(value))\r\n                return defaultValue;\r\n            return value;\r\n        }\r\n\r\n        public static clamp(value: number, min: number, max: number): number {\r\n            if (min > max) {\r\n                var tmp = max;\r\n                max = min;\r\n                min = tmp;\r\n            }\r\n            return (value < min) ? min : ((value > max) ? max : value);\r\n        }\r\n\r\n        public static roundTo(value: number, mod: number): number {\r\n            var r: number = value % mod;\r\n            return (r < (mod * 0.5)) ? value - r : value + (mod - r);\r\n        }\r\n\r\n        public static floorTo(value: number, mod: number): number {\r\n            return value - (value % mod);\r\n        }\r\n\r\n        public shortRotation(startRotation: number, endRotation: number): number {\r\n            var dif: number = (endRotation - startRotation) % 360;\r\n            if (dif != dif % 180)\r\n                dif = (dif < 0) ? dif + 360 : dif - 360;\r\n            return dif;\r\n        }\r\n\r\n        public static limits(point: geom.IPoint3DValue, limits: ILimit, width: number, height: number, depth: number = 1000): geom.IPoint3DValue {\r\n            if (limits.minX !== undefined)\r\n                point.x = Math.max(point.x, Number.relation(limits.minX, width, point.x));\r\n            if (limits.maxX !== undefined)\r\n                point.x = Math.min(point.x, Number.relation(limits.maxX, width, point.x));\r\n            if (limits.minY !== undefined)\r\n                point.y = Math.max(point.y, Number.relation(limits.minY, height, point.y));\r\n            if (limits.maxY !== undefined)\r\n                point.y = Math.min(point.y, Number.relation(limits.maxY, height, point.y));\r\n            if (limits.minZ !== undefined)\r\n                point.z = Math.max(point.z, Number.relation(limits.minZ, depth, point.z));\r\n            if (limits.maxY !== undefined)\r\n                point.z = Math.min(point.z, Number.relation(limits.maxZ, depth, point.z));\r\n            return point;\r\n        }\r\n    }\r\n}"
     },
     {
-      "name": "src/jsidea/model/Converter/Json.ts",
-      "size": 756,
-      "sizeMinified": 307,
-      "code": "namespace jsidea.model.Converter {\r\n    class JsonParser implements IConverter {\r\n        public read(data: string): any {\r\n            return JSON.parse(data);\r\n        }\r\n\r\n        public write(data: any): string {\r\n            return JSON.stringify(data);\r\n        }\r\n    }\r\n\r\n    export var Json: IConverter = new JsonParser();\r\n}"
-    },
-    {
       "name": "src/jsidea/model/Dictionary.ts",
       "size": 2178,
       "sizeMinified": 971,
       "code": "namespace jsidea.model {\r\n    export class Dictonary<Key, Value> {\r\n        private _keys: Key[] = [];\r\n        private _values: Value[] = [];\r\n\r\n        constructor() {\r\n        }\r\n\r\n        public getValue(key: Key): Value {\r\n            return this._values[this._keys.indexOf(key)];\r\n        }\r\n\r\n        public setValue(key: Key, value: Value): Value {\r\n            var index = this._keys.indexOf(key);\r\n            if (index < 0) {\r\n                this._keys.push(key);\r\n                this._values.push(value);\r\n                return value;\r\n            }\r\n            this._values[index] = value;\r\n            return value;\r\n        }\r\n        \r\n        public hasKey(key: Key):boolean\r\n        {\r\n            return this._keys.indexOf(key) >= 0;    \r\n        }\r\n        \r\n        public hasValue(value: Value):boolean\r\n        {\r\n            return this._values.indexOf(value) >= 0;    \r\n        }\r\n\r\n        public clear(): void {\r\n            this._keys.splice(0, this._keys.length);\r\n            this._values.splice(0, this._values.length);\r\n        }\r\n\r\n        public removeKey(key: Key): Value {\r\n            var index = this._keys.indexOf(key);\r\n            if (index < 0)\r\n                return null;\r\n            var value: Value = this._values[index];\r\n            this._keys.splice(index, 1);\r\n            this._values.splice(index, 1);\r\n            return value;\r\n        }\r\n        \r\n        public getKeys(value: Value): Key[] {\r\n            var res:Key[] = [];\r\n            var index = 0; \r\n            while((index = this._values.indexOf(value, index)) >= 0)\r\n                res.push(this._keys[index]);\r\n            return res;\r\n        }\r\n\r\n        public length(): number {\r\n            return this._keys.length;\r\n        }\r\n    }\r\n}"
     },
     {
-      "name": "src/jsidea/model/IConverter.ts",
+      "name": "src/jsidea/model/ILoader.ts",
       "size": 0,
       "sizeMinified": 0,
-      "code": "namespace jsidea.model {\r\n    export interface IConverter {\r\n        read(data: string): any\r\n        write(data: any): string;\r\n    }\r\n}"
+      "code": "namespace jsidea.model {\r\n    export interface ILoader {\r\n        load(request: Request<any>): void;\r\n    }\r\n}"
     },
     {
-      "name": "src/jsidea/model/Loader.ts",
-      "size": 1467,
-      "sizeMinified": 662,
-      "code": "namespace jsidea.model {\r\n    export enum LoaderMethod {\r\n        GET,\r\n        POST\r\n    }\r\n    export class Loader extends events.EventDispatcher {\r\n        private _stack: URLRequest<any>[] = [];\r\n        constructor() {\r\n            super();\r\n        }\r\n        public load(request: URLRequest<any>): void {\r\n            var ajax = new XMLHttpRequest();\r\n            ajax.onreadystatechange = (e: ProgressEvent) => {\r\n                if (ajax.readyState == 4) {\r\n                    if (ajax.status == 200) {\r\n                        //                    this.parse(JSON.parse(this._ajax.responseText));\r\n                    }\r\n                    else {\r\n                        console.log(ajax.statusText);\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}"
+      "name": "src/jsidea/model/IReader.ts",
+      "size": 0,
+      "sizeMinified": 0,
+      "code": "namespace jsidea.model {\r\n    export interface IReader {\r\n        responseType: string;\r\n        read(data: any): any\r\n    }\r\n}"
     },
     {
-      "name": "src/jsidea/model/URLRequest.ts",
-      "size": 4051,
-      "sizeMinified": 1565,
-      "code": "namespace jsidea.model {\r\n    export enum URLMethod {\r\n        GET,\r\n        POST\r\n    }\r\n    export class URLRequest<ResponseType> extends events.EventDispatcher {\r\n        private static _parser: HTMLAnchorElement = new HTMLAnchorElement();\r\n\r\n        public method: URLMethod = URLMethod.GET;\r\n        public protocol: string;\r\n        public host: string;\r\n        public path: string;\r\n        public port: string;\r\n        public upload: any = null;\r\n        public response: ResponseType = null;\r\n        public responseText: string;\r\n        public writer: IConverter = null;\r\n        public reader: IConverter = Converter.Json;\r\n\r\n        constructor(url?: string) {\r\n            super();\r\n            if (url)\r\n                this.url = url;\r\n        }\r\n\r\n        public set url(url: string) {\r\n            var p = URLRequest._parser;\r\n            p.href = url;\r\n            this.port = p.port;\r\n            this.protocol = p.protocol;\r\n            this.host = p.host;\r\n            this.path = p.pathname;\r\n        }\r\n\r\n        public get url(): string {\r\n            var p = URLRequest._parser;\r\n            p.port = this.port;\r\n            p.protocol = this.protocol;\r\n            p.host = this.host;\r\n            p.pathname = this.path;\r\n            return p.href;\r\n        }\r\n\r\n        public send(): void {\r\n            URLRequest.send(this);\r\n        }\r\n\r\n        public static create<ResponseType>(url: string): URLRequest<ResponseType> {\r\n            return new URLRequest<ResponseType>(url);\r\n        }\r\n\r\n        private static send(request: URLRequest<any>): void {\r\n            var uploadData = request.upload;\r\n            if (uploadData && request.writer) {\r\n                try {\r\n                    uploadData = request.writer.write(request.upload);\r\n                } catch (e) {\r\n                    console.warn(e);\r\n                    request.dispatchEvent(new Event(\"error\"));\r\n                    return;\r\n                }\r\n            }\r\n\r\n            var ajax = new XMLHttpRequest();\r\n\r\n            ajax.onreadystatechange = (e: ProgressEvent) => {\r\n                if (ajax.readyState == 4) {\r\n                    if (ajax.status == 200) {\r\n                        request.responseText = ajax.responseText;\r\n\r\n                        var responseData = request.responseText;\r\n                        if (request.reader) {\r\n                            try {\r\n                                responseData = request.reader.read(request.responseText);\r\n                            } catch (e) {\r\n                                console.warn(e);\r\n                                request.dispatchEvent(new Event(\"error\"));\r\n                                return;\r\n                            }\r\n                        }\r\n                        request.response = responseData;\r\n                        request.dispatchEvent(new Event(\"complete\"));\r\n                    }\r\n                    else {\r\n                        console.log(ajax.statusText);\r\n                    }\r\n                }\r\n            }\r\n\r\n            ajax.send(request.upload);\r\n        }\r\n    }\r\n}"
+      "name": "src/jsidea/model/IWriter.ts",
+      "size": 0,
+      "sizeMinified": 0,
+      "code": "namespace jsidea.model {\r\n    export interface IWriter {\r\n        write(data: any): string;\r\n    }\r\n}"
+    },
+    {
+      "name": "src/jsidea/model/Loader/Ajax.ts",
+      "size": 2701,
+      "sizeMinified": 808,
+      "code": "namespace jsidea.model.Loader {\r\n    class AjaxLoader implements ILoader {\r\n        public load(request: Request<any>): void {\r\n            //get the upload data\r\n            var uploadData = request.upload;\r\n            if (uploadData && request.writer) {\r\n                try {\r\n                    uploadData = request.writer.write(request.upload);\r\n                } catch (exc) {\r\n                    request.state = RequestState.FAILED;\r\n                    request.onFail.invoke(exc);\r\n                    return;\r\n                }\r\n            }\r\n\r\n            //handle the ready state\r\n            var ajax = new XMLHttpRequest();\r\n            ajax.onreadystatechange = (e: ProgressEvent) => {\r\n                if (ajax.readyState == 4) {\r\n                    if (ajax.status == 200) {\r\n                        var responseText = ajax.responseText;\r\n                        \r\n                        //parse/read the data\r\n                        var responseData = <any>responseText;\r\n                        if (request.reader) {\r\n                            try {\r\n                                responseData = request.reader.read(responseText);\r\n                            } catch (exc) {\r\n                                request.state = RequestState.FAILED;\r\n                                request.onFail.invoke(exc);\r\n                                return;\r\n                            }\r\n                        }\r\n\r\n                        request.state = RequestState.SUCCESS;\r\n                        request.onSuccess.invoke(responseData);\r\n                    }\r\n                    else {\r\n                        request.state = RequestState.FAILED;\r\n                        request.onFail.invoke(\"404\");\r\n                    }\r\n                }\r\n                else if (ajax.readyState == 0) {\r\n                    console.log(\"REQUEST NOT INIT\");\r\n                }\r\n            }\r\n\r\n            ajax.open(RequestMethod[request.method], request.url.href);\r\n            ajax.send(request.upload);\r\n        }\r\n    }\r\n    export var AJAX: ILoader = new AjaxLoader();\r\n}"
+    },
+    {
+      "name": "src/jsidea/model/Loader/JsonP.ts",
+      "size": 1983,
+      "sizeMinified": 709,
+      "code": "namespace jsidea.model.Loader {\r\n    class JSONPLoader implements ILoader {\r\n        private static _JSON_UID: number = 0;\r\n        private static _URL: URL = new URL(\"\");\r\n        public load(request: Request<any>): void {\r\n            var uid = JSONPLoader._JSON_UID++;\r\n            var functionName = \"JSONPCallback\" + uid;\r\n            var script = document.createElement(\"script\");\r\n            script.type = \"text\\/javascript\";\r\n            script.onerror = (e) => request.onFail.invoke(e);\r\n            (<any>window)[functionName] = (data: string) => {\r\n                var responseData = data;\r\n                if (request.reader) {\r\n                    try {\r\n                        responseData = request.reader.read(responseData);\r\n                    } catch (exc) {\r\n                        request.state = RequestState.FAILED;\r\n                        request.onFail.invoke(exc);\r\n                        return;\r\n                    }\r\n                }\r\n                request.state = RequestState.SUCCESS;\r\n                request.onSuccess.invoke(responseData);\r\n            }; \r\n            //            script.onload = () => \r\n            var url = request.url;\r\n            url.addParameters({ \"callback\": functionName });\r\n            script.src = url.href;\r\n            document.getElementsByTagName(\"head\")[0].appendChild(script);\r\n        }\r\n    }\r\n    export var JSONP: ILoader = new JSONPLoader();\r\n}"
+    },
+    {
+      "name": "src/jsidea/model/Reader/ArrayBuffer.ts",
+      "size": 691,
+      "sizeMinified": 272,
+      "code": "namespace jsidea.model.Reader {\r\n    class ArrayBufferReader implements IReader {\r\n        public responseType: string = \"arraybuffer\";\r\n        public read(data: ArrayBuffer): ArrayBuffer {\r\n            return data;\r\n        }\r\n    }\r\n\r\n    export var ARRAY_BUFFER: IReader = new ArrayBufferReader();\r\n}"
+    },
+    {
+      "name": "src/jsidea/model/Reader/Blob.ts",
+      "size": 641,
+      "sizeMinified": 257,
+      "code": "namespace jsidea.model.Reader {\r\n    class BlobReader implements IReader {\r\n        public responseType: string = \"blob\";\r\n        public read(data: Blob): Blob {\r\n            return data;\r\n        }\r\n    }\r\n\r\n    export var BLOB: IReader = new BlobReader();\r\n}"
+    },
+    {
+      "name": "src/jsidea/model/Reader/Json.ts",
+      "size": 748,
+      "sizeMinified": 296,
+      "code": "namespace jsidea.model.Reader {\r\n    class JSONReader implements IReader {\r\n        public responseType: string = \"json\";\r\n        public read(data: string | any): any {\r\n            if (typeof data == \"string\")\r\n                return window.JSON.parse(data);\r\n            return data;\r\n        }\r\n    }\r\n\r\n    export var JSON: IReader = new JSONReader();\r\n}"
+    },
+    {
+      "name": "src/jsidea/model/Reader/Text.ts",
+      "size": 641,
+      "sizeMinified": 257,
+      "code": "namespace jsidea.model.Reader {\r\n    class TextReader implements IReader {\r\n        public responseType: string = \"text\";\r\n        public read(data: string): string {\r\n            return data;\r\n        }\r\n    }\r\n\r\n    export var TEXT: IReader = new TextReader();\r\n}"
+    },
+    {
+      "name": "src/jsidea/model/Request.ts",
+      "size": 2287,
+      "sizeMinified": 980,
+      "code": "namespace jsidea.model {\r\n    export enum RequestMethod {\r\n        GET,\r\n        POST,\r\n        PUT\r\n    }\r\n    export enum RequestState {\r\n        UNSENT,\r\n        LOADING,\r\n        FAILED,\r\n        SUCCESS\r\n    }\r\n    export class Request<ResponseType> {\r\n        private _state: RequestState = RequestState.UNSENT;\r\n\r\n        public url: URL = new URL();\r\n        public upload: any = null;\r\n        public method: RequestMethod = RequestMethod.GET;\r\n        public writer: IWriter = null;\r\n        public reader: IReader = Reader.JSON;\r\n        public loader: ILoader = Loader.AJAX;\r\n\r\n        public onFail = events.Signal.create<any>();\r\n        public onSuccess = events.Signal.create<ResponseType>();\r\n        public onStateChange = events.Signal.create<RequestState>();\r\n\r\n        constructor(href: string) {\r\n            this.url.href = href;\r\n        }\r\n\r\n        public get state(): RequestState {\r\n            return this._state;\r\n        }\r\n\r\n        public set state(state: RequestState) {\r\n            if (this._state == state)\r\n                return;\r\n            this.onStateChange.invoke(state);\r\n            this._state = state;\r\n        }\r\n\r\n        public load(): void {\r\n            this.state = RequestState.LOADING;\r\n            this.loader.load(this);\r\n        }\r\n    }\r\n}"
+    },
+    {
+      "name": "src/jsidea/model/URL.ts",
+      "size": 3033,
+      "sizeMinified": 1243,
+      "code": "namespace jsidea.model {\r\n    type URLParameters = {\r\n        [key: string]: string | number;\r\n    };\r\n    export class URL {\r\n        private static _parser: HTMLAnchorElement = document.createElement(\"a\");\r\n\r\n        public host: string = \"\";\r\n        public protocol: string = \"\";\r\n        public path: string = \"\";\r\n        public hash: string = \"\";\r\n\r\n        constructor(href?: string) {\r\n            if (href)\r\n                this.href = href;\r\n        }\r\n\r\n        public set href(url: string) {\r\n            var p = URL._parser;\r\n            p.href = url;\r\n            this.host = p.host;\r\n            this.protocol = p.protocol;\r\n            this.path = p.pathname;\r\n            this.hash = p.hash;\r\n        }\r\n\r\n        public get href(): string {\r\n            var p = URL._parser;\r\n            p.host = this.host;\r\n            p.protocol = this.protocol;\r\n            p.pathname = this.path;\r\n            p.hash = this.hash;\r\n            return p.href;\r\n        }\r\n\r\n        public addParameters(params: URLParameters) {\r\n            var merged = this.parameters;\r\n            for (var p in params)\r\n                merged[p] = params[p];\r\n            this.parameters = merged;\r\n        }\r\n\r\n        public removeParameters(params: URLParameters) {\r\n            var merged = this.parameters;\r\n            for (var p in params)\r\n                delete merged[p];\r\n            this.parameters = merged;\r\n        }\r\n\r\n        public set parameters(params: URLParameters) {\r\n            var url = this.href;\r\n            \r\n            //build the url parameter string\r\n            var pairs: string[] = [];\r\n            for (var key in params) {\r\n                var value = params[key];\r\n                pairs.push(encodeURIComponent(key) + \"=\" + encodeURIComponent(value.toString()));\r\n            }\r\n            var paramsStr = \"?\" + pairs.join(\"&\");\r\n            \r\n            //replace the existing params-string\r\n            var idx = url.indexOf(\"?\");\r\n            if (idx === -1)\r\n                idx = url.length;\r\n            this.href = url.substr(0, idx) + paramsStr;\r\n        }\r\n\r\n        public get parameters(): URLParameters {\r\n            var url = this.href;\r\n            var params: URLParameters = {};\r\n            //SOURCE: http://papermashup.com/read-url-get-variables-withjavascript/\r\n            var parts = url.replace(/[?&]+([^=&]+)=([^&]*)/gi,\r\n                (m, key, value) => {\r\n                    params[decodeURIComponent(key)] = decodeURIComponent(value);\r\n                    return \"\";\r\n                });\r\n            return params;\r\n        }\r\n    }\r\n}"
+    },
+    {
+      "name": "src/jsidea/model/Writer/Json.ts",
+      "size": 616,
+      "sizeMinified": 257,
+      "code": "namespace jsidea.model.Writer {\r\n    class JsonWriter implements IWriter {\r\n        public write(data: any): string {\r\n            return window.JSON.stringify(data);\r\n        }\r\n    }\r\n\r\n    export var JSON: IWriter = new JsonWriter();\r\n}"
     },
     {
       "name": "src/jsidea/plugins/Builder.ts",
-      "size": 14964,
-      "sizeMinified": 6421,
-      "code": "namespace jsidea.plugins {\r\n    export interface IFile {\r\n        name: string;\r\n        size: number;\r\n        code: string;\r\n        sizeMinified?: number;\r\n    }\r\n    export interface IData {\r\n        project: any;\r\n        files: IFile[];\r\n        typescript: ISymbol[];\r\n    }\r\n    export interface IReferenceData {\r\n        fullName: string;\r\n        file: string | IFile;\r\n        kind: number;\r\n        imports: any[];\r\n    }\r\n    export interface ISymbol extends IReferenceData {\r\n        ui: SymbolUI;\r\n        relations: ISymbol[];\r\n        usage: ISymbol[];\r\n        imports: ISymbol[];\r\n        usageOrder: number;\r\n        file: IFile;\r\n        name: string;\r\n        url: string;\r\n        module: IModule;\r\n        isDependent: boolean;\r\n        isChecked: boolean;\r\n    }\r\n    export interface IModule {\r\n        ui: ModuleUI;\r\n        fullName: string;\r\n        name: string;\r\n        symbols: ISymbol[];\r\n    }\r\n    type SortFunction = (a: ISymbol, b: ISymbol) => number;\r\n    export class ModuleUI {\r\n        public element: HTMLElement;\r\n        public list: HTMLDivElement;\r\n        private _data: IModule;\r\n        private _header: HTMLDivElement;\r\n        private _docs: HTMLAnchorElement;\r\n\r\n        constructor(data: IModule) {\r\n            this._data = data;\r\n\r\n            var element = document.createElement(\"div\");\r\n            element.className = \"module\";\r\n            element.id = data.fullName;\r\n            this.element = element;\r\n\r\n            var header = document.createElement(\"div\");\r\n            header.className = \"header\";\r\n            header.textContent = data.fullName.replace(\"jsidea.\", \"\");\r\n            this._header = header;\r\n\r\n            var list = document.createElement(\"div\");\r\n            list.className = \"list\";\r\n            this.list = list;\r\n\r\n            //            var docs = document.createElement(\"a\");\r\n            //            docs.className = \"docs\";\r\n            //            docs.href = data.;\r\n            //            this._docs = docs;\r\n            \r\n            element.appendChild(header);\r\n            //            header.appendChild(docs);\r\n            element.appendChild(list);\r\n\r\n            header.addEventListener(\"click\", () => {\r\n                element.classList.toggle(\"collapsed\");\r\n            });\r\n            \r\n            \r\n            //            docs.addEventListener(\"click\", () => {\r\n            //                \r\n            //            });            \r\n        }\r\n    }\r\n    export class SymbolUI {\r\n        private _data: ISymbol;\r\n        public element: HTMLElement;\r\n        private _docs: HTMLAnchorElement;\r\n\r\n        constructor(data: ISymbol) {\r\n            this._data = data;\r\n\r\n            this.element = document.createElement(\"div\");\r\n\r\n            var e = this.element;\r\n\r\n            e.className = \"symbol\";\r\n            e.id = data.fullName;\r\n            e.setAttribute(\"data-checked\", \"0\");\r\n            e.setAttribute(\"data-dependent\", \"0\");\r\n            e.setAttribute(\"data-kind\", data.kind.toString());\r\n\r\n            var chk = document.createElement(\"div\");\r\n            chk.className = \"checkbox\";\r\n            e.appendChild(chk);\r\n\r\n            var lab = document.createElement(\"div\");\r\n            lab.className = \"label\";\r\n            lab.textContent = data.name;// + \" [\" + text.Text.fileSize(data.file.size) + \" \" + text.Text.fileSize(data.file.sizeMinified) + \"]\";\r\n            //            lab.textContent = reference.name + \" [\" + reference.file.size + \" \" + reference.file.sizeMinified + \"]\";\r\n            e.appendChild(lab);\r\n\r\n            var docs = document.createElement(\"a\");\r\n            docs.className = \"docs\";\r\n            docs.href = data.url;\r\n            e.appendChild(docs);\r\n            this._docs = docs;\r\n\r\n            docs.addEventListener(\"click\", (e) => {\r\n                e.stopPropagation();\r\n            });\r\n        }\r\n\r\n        public setChecked(checked: boolean): void {\r\n            this.element.setAttribute(\"data-checked\", checked ? \"1\" : \"0\");\r\n        }\r\n\r\n        public setDependent(dependent: boolean): void {\r\n            this.element.setAttribute(\"data-dependent\", dependent ? \"1\" : \"0\");\r\n        }\r\n    }\r\n    export class Builder extends Plugin {\r\n\r\n        public symbols: ISymbol[] = null;\r\n        public files: IFile[] = null;\r\n        public modules: IModule[] = null;\r\n\r\n        private _ajax: XMLHttpRequest;\r\n        private _content: HTMLDivElement = null;\r\n\r\n        public static SORT_FILESIZE: SortFunction = (a, b) => {\r\n            return a.file.size - b.file.size;\r\n        };\r\n\r\n        public static SORT_USAGE: SortFunction = (a, b) => {\r\n            return a.usageOrder - b.usageOrder;\r\n        };\r\n\r\n        public static SORT_MODULE: SortFunction = (a, b) => {\r\n            if (a.module != b.module)\r\n                return a.module.fullName.localeCompare(b.module.fullName);\r\n            if (a.name != b.name)\r\n                return a.name.localeCompare(b.name);\r\n            return a.fullName.localeCompare(b.fullName);\r\n        };\r\n\r\n        public static SORT_NAME: SortFunction = (a, b) => {\r\n            return a.name.localeCompare(b.name);\r\n        };\r\n\r\n        constructor() {\r\n            super();\r\n\r\n            var url = \"http://127.0.0.1/eventfive/jsidea-website/build/\" + project + \"/\" + version + \"/\" + project + \".build.json\";\r\n            var req = model.URLRequest.create<string>(url);\r\n            req.addEventListener(\"complete\", () => {\r\n\r\n            });\r\n            req.send();\r\n\r\n            this._ajax = new XMLHttpRequest();\r\n            this._ajax.onreadystatechange = (e) => this.onReadyStateChange(e);\r\n\r\n            var drag = new action.Drag();\r\n\r\n            var project = \"jsidea\";\r\n            var version = \"0.0.1\";\r\n            this.load(\"http://127.0.0.1/eventfive/jsidea-website/build/\" + project + \"/\" + version + \"/\" + project + \".build.json\");\r\n        }\r\n\r\n        public load(url: string): void {\r\n            this._ajax.open(\"GET\", url);\r\n            this._ajax.send(null);\r\n        }\r\n\r\n        private onReadyStateChange(e: ProgressEvent): void {\r\n            if (this._ajax.readyState == 4) {\r\n                if (this._ajax.status == 200) {\r\n                    this.parse(JSON.parse(this._ajax.responseText));\r\n\r\n                    //                    var tar: HTMLElement = null;\r\n                    //                    var el = document.createElement(\"div\");\r\n                    //                    el.style.top = \"0px\";\r\n                    //                    el.style.left = \"0px\";\r\n                    //                    //            el.style.width = \"200px\";\r\n                    //                    //            el.style.height = \"200px\";\r\n                    //                    //            el.style.backgroundColor = \"#FFFF00\";\r\n                    //                    el.style.position = \"fixed\";\r\n                    //                    document.body.appendChild(el);\r\n                    //                    document.addEventListener(\"click\", (e) => {\r\n                    //                        tar = <HTMLElement>e.target;\r\n                    //                    });\r\n                    //                    var trans = new layout.Transform();\r\n                    //                    document.addEventListener(\"mousemove\", (e) => {\r\n                    //                        if (!tar)\r\n                    //                            return;\r\n                    //\r\n                    //                        trans.update(tar);\r\n                    //                        var local = trans.globalToLocal(e.pageX, e.pageY, 0);\r\n                    //                        el.textContent = local.x + \" \" + local.y;\r\n                    //                    });\r\n                }\r\n                else {\r\n                    console.log(this._ajax.statusText);\r\n                }\r\n            }\r\n        }\r\n\r\n        private parse(dat: IData): void {\r\n            var data = dat.typescript;\r\n            this._content = document.createElement(\"div\");\r\n            this._content.id = \"dependency\";\r\n            document.body.appendChild(this._content);\r\n            \r\n            //            var host = ts.createCompilerHost({ noLib: true });\r\n            //            console.log(host);\r\n            \r\n            //get all exports\r\n            this.symbols = data;\r\n            this.files = dat.files;\r\n            this.modules = [];\r\n            \r\n            //            for (var file of dat.files)\r\n            //                file.sizeMinified = text.Text.byteLengthUTF8(file.code);\r\n            \r\n            //create/collect references\r\n            var refs: ISymbol[] = this.symbols;\r\n            \r\n            //resolve names to IReference objects\r\n            var moduleLookup: any = {};\r\n            var modules: IModule[] = this.modules;\r\n            for (var ref of refs) {\r\n                ref.file = this.getFileByName(<any>ref.file);\r\n                for (var i = 0; i < ref.imports.length; ++i)\r\n                    ref.imports[i] = this.getByQualifiedName(<any>ref.imports[i]);\r\n                var path = ref.fullName.split(\".\");\r\n                ref.name = path[path.length - 1];\r\n                ref.module = null;//\r\n                ref.isDependent = false;\r\n                ref.isChecked = false;\r\n                var moduleName = path.slice(0, path.length - 1).join(\".\");\r\n                if (!moduleLookup[moduleName]) {\r\n                    ref.module = { fullName: moduleName, name: path[path.length - 2], symbols: [ref], ui: null };\r\n                    moduleLookup[moduleName] = ref.module;\r\n                    modules.push(ref.module);\r\n                }\r\n                else {\r\n                    ref.module = moduleLookup[moduleName];\r\n                    ref.module.symbols.push(ref);\r\n                }\r\n\r\n                if (!ref.usage)\r\n                    ref.usage = [];\r\n                for (var chi of ref.imports) {\r\n                    if (!chi.usage)\r\n                        chi.usage = [];\r\n                    if (chi.usage.indexOf(ref) === -1)\r\n                        chi.usage.push(ref);\r\n                }\r\n                ref.url = this.getURL(ref);\r\n            }\r\n\r\n            modules.sort((a, b) => {\r\n                return a.name.localeCompare(b.name);\r\n            });\r\n\r\n            //create ui\r\n            for (var mod of modules) {\r\n                mod.symbols.sort(Builder.SORT_NAME);\r\n                mod.ui = this.createModuleUI(mod);\r\n                for (var sym of mod.symbols) {\r\n                    sym.ui = this.createSymbolUI(sym);\r\n                }\r\n            }\r\n            \r\n            //multipath(2/3)\r\n            for (var ref of refs) {\r\n                ref.relations = this.createRelations(ref);\r\n            }\r\n\r\n            this.sort(Builder.SORT_MODULE);\r\n            \r\n            //multipath(3/3)\r\n            var ordered = this.getOrderedSymbols();\r\n            var i = 0;\r\n            for (var ref of ordered) {\r\n                ref.usageOrder = i++;\r\n            }\r\n\r\n            this.sort(Builder.SORT_MODULE);\r\n            \r\n            //            console.log(SourceMapGenerator);\r\n            //            return;\r\n            \r\n            //---------------\r\n            //TEST TYPESCRIPT\r\n            //---------------\r\n            \r\n            //            var filesToCompile = this.files;\r\n            //            var opt: ts.CompilerOptions = {};\r\n            //            opt.declaration = true;\r\n            //            opt.sourceMap = true;\r\n            //            opt.outFile = \"jsidea.js\";\r\n            //            var host = new build.VirtualHost(filesToCompile);\r\n            //            var names = [];\r\n            //            for (var f of this.files)\r\n            //                names.push(f.name);\r\n            //            var program = ts.createProgram(names, opt, host);\r\n            //            var em = program.emit();\r\n            //            console.log(host.results);\r\n\r\n            //            var s = new build.SymbolProcessor();\r\n            //            s.run(this.files);\r\n            //            console.log(\"EXPORTS\", s.exports);\r\n            \r\n            \r\n            var host = new build.FileSystem(this.files);\r\n            //            var filesToCompile = host.match(\"*.ts\");\r\n            //            \r\n            //            var opt: ts.CompilerOptions = {};\r\n            //            opt.declaration = true;\r\n            //            opt.sourceMap = true;\r\n            //            opt.outFile = \"jsidea.js\";\r\n            //            \r\n            //            var names = [];\r\n            //            for (var f of filesToCompile)\r\n            //                names.push(f.name);\r\n            //            \r\n            //            var program = ts.createProgram(names, opt, host);\r\n            //            var em = program.emit();\r\n\r\n            //            console.log(\"MATCH\", host.match(\"*.map\"));\r\n            \r\n            var result = build.Usage.TYPESCRIPT.apply(host.match(\"*.ts\"));\r\n            console.log(\"SYMBOLS\", result.symbols);\r\n            \r\n            \r\n\r\n            //            var options: any = {};\r\n            //            var ot: any = {};\r\n            //            //            ot.inSourceMap = host.results[0].code;\r\n            //            //            ot.outSourceMap = true;\r\n            //            var min = UglifyJS.minify(host.results[1].name, host, ot);\r\n            //            console.log(min);\r\n        }\r\n        private getURL(sym: ISymbol): string {\r\n            var base = \"http://127.0.0.1/eventfive/jsidea-build/bin/\";\r\n            if (sym.kind == 213)\r\n                base += \"interfaces/\";\r\n            else if (sym.kind == 212)\r\n                base += \"classes/\";\r\n            else if (sym.kind == 209)\r\n                base += \"modules/\";\r\n            base += sym.module.fullName.toLowerCase();\r\n            if (sym.kind == 209)//variable declaration\r\n                base += \".html#\" + sym.name.toLowerCase();\r\n            else if (sym.kind == 212 || sym.kind == 213)//class or interface\r\n                base += \".\" + sym.name.toLowerCase() + \".html\";\r\n            return base;\r\n        }\r\n\r\n        private getOrderedSymbols(): ISymbol[] {\r\n            function addAt(ary: any[], data: any, index: number): any[] {\r\n                var head = ary.slice(0, index);\r\n                var tail = ary.slice(index);\r\n                ary.splice(0, ary.length);\r\n                for (var da of head)\r\n                    ary.push(da);\r\n                ary.push(data);\r\n                for (var da of tail)\r\n                    ary.push(da);\r\n                return ary;\r\n            }\r\n\r\n            var symbols = this.symbols;\r\n            var res: ISymbol[] = [];\r\n            for (var ref of symbols) {\r\n                var l = res.length;\r\n                for (var i = 0; i < l; ++i) {\r\n                    //if its used by\r\n                    if (res[i] == ref)\r\n                        continue;\r\n                    if (res[i].relations.indexOf(ref) >= 0) {\r\n                        addAt(res, ref, i);\r\n                        break;\r\n                    }\r\n                }\r\n                if (res.indexOf(ref) === -1)\r\n                    res.push(ref);\r\n            }\r\n            return res;\r\n        }\r\n\r\n        public getFileByName(name: string): IFile {\r\n            for (var file of this.files)\r\n                if (file.name == name)\r\n                    return file;\r\n            return null;\r\n        }\r\n\r\n        private getByQualifiedName(name: string): ISymbol {\r\n            var refs = this.symbols;\r\n            for (var ref of refs)\r\n                if (ref.fullName == name)\r\n                    return ref;\r\n            return null;\r\n        }\r\n\r\n        private createRelations(ref: ISymbol, relations?: ISymbol[]): ISymbol[] {\r\n            relations = relations || [];\r\n            for (var imp of ref.imports) {\r\n                if (relations.indexOf(imp) < 0) {\r\n                    relations.push(imp);\r\n                    //                    if (imp.usage.indexOf(ref) === -1)\r\n                    //                        imp.usage.push(ref);\r\n                    this.createRelations(imp, relations);\r\n                }\r\n            }\r\n            return relations;\r\n        }\r\n\r\n        private createModuleUI(mod: IModule): ModuleUI {\r\n            var ui = new ModuleUI(mod);\r\n            this._content.appendChild(ui.element);\r\n            //            ui.element.addEventListener(\"click\", () => this.onClickElement(ref));\r\n            return ui;\r\n        }\r\n\r\n        private createSymbolUI(ref: ISymbol): SymbolUI {\r\n            var ui = new SymbolUI(ref);\r\n            ref.module.ui.list.appendChild(ui.element);\r\n            ui.element.addEventListener(\"click\", () => this.onClickElement(ref));\r\n            return ui;\r\n        }\r\n\r\n        private onClickElement(ref: ISymbol): void {\r\n            ref.isChecked = !ref.isChecked;\r\n            this.refreshDependency();\r\n        }\r\n\r\n        private refreshDependency(): void {\r\n            //collect checked\r\n            //and reset dependent\r\n            var checked: ISymbol[] = [];\r\n            for (var ref of this.symbols) {\r\n                ref.isDependent = false;\r\n                if (ref.isChecked)\r\n                    checked.push(ref);\r\n            }\r\n            \r\n            //mark dependencies\r\n            for (var ref of checked)\r\n                for (var rel of ref.relations)\r\n                    rel.isDependent = true;\r\n            \r\n            //size\r\n            var size = this.getSize();\r\n            //            console.log(\"SIZE\", text.Text.fileSize(size.bytesMinified));\r\n\r\n            //refresh the ui-elements\r\n            this.refreshUI();\r\n        }\r\n\r\n        private getSize(): { bytes: number, bytesMinified: number } {\r\n            var files: IFile[] = [];\r\n            for (var ref of this.symbols)\r\n                if (ref.isDependent)\r\n                    if (files.indexOf(ref.file) === -1)\r\n                        files.push(ref.file);\r\n            var bytesMinified = 0;\r\n            var bytes = 0;\r\n            for (var file of files) {\r\n                bytes += file.size;\r\n                bytesMinified += file.sizeMinified;\r\n            }\r\n            return { bytes: bytes, bytesMinified: bytesMinified };\r\n        }\r\n\r\n        public sort(f: SortFunction): void {\r\n            this.symbols.sort(f);\r\n            \r\n            //            var display = this._list.style.display;\r\n            //            this._list.style.display = \"none\";\r\n            //            for (var symbol of this.symbols)\r\n            //                this._list.appendChild(symbol.ui.getElement());\r\n            //            this._list.style.display = display;\r\n        }\r\n\r\n        private refreshUI(): void {\r\n            for (var ref of this.symbols) {\r\n                ref.ui.setChecked(ref.isChecked);\r\n                ref.ui.setDependent(ref.isDependent);\r\n            }\r\n        }\r\n    }\r\n}"
+      "size": 14166,
+      "sizeMinified": 6011,
+      "code": "namespace jsidea.plugins {\r\n    export interface IFile {\r\n        name: string;\r\n        size: number;\r\n        code: string;\r\n        sizeMinified?: number;\r\n    }\r\n    export interface IData {\r\n        project: any;\r\n        files: IFile[];\r\n        typescript: ISymbol[];\r\n    }\r\n    export interface IReferenceData {\r\n        fullName: string;\r\n        file: string | IFile;\r\n        kind: number;\r\n        imports: any[];\r\n    }\r\n    export interface ISymbol extends IReferenceData {\r\n        ui: SymbolUI;\r\n        relations: ISymbol[];\r\n        usage: ISymbol[];\r\n        imports: ISymbol[];\r\n        usageOrder: number;\r\n        file: IFile;\r\n        name: string;\r\n        url: string;\r\n        module: IModule;\r\n        isDependent: boolean;\r\n        isChecked: boolean;\r\n    }\r\n    export interface IModule {\r\n        ui: ModuleUI;\r\n        fullName: string;\r\n        name: string;\r\n        symbols: ISymbol[];\r\n    }\r\n    type SortFunction = (a: ISymbol, b: ISymbol) => number;\r\n    export class ModuleUI {\r\n        public element: HTMLElement;\r\n        public list: HTMLDivElement;\r\n        private _data: IModule;\r\n        private _header: HTMLDivElement;\r\n        private _docs: HTMLAnchorElement;\r\n\r\n        constructor(data: IModule) {\r\n            this._data = data;\r\n\r\n            var element = document.createElement(\"div\");\r\n            element.className = \"module\";\r\n            element.id = data.fullName;\r\n            this.element = element;\r\n\r\n            var header = document.createElement(\"div\");\r\n            header.className = \"header\";\r\n            header.textContent = data.fullName.replace(\"jsidea.\", \"\");\r\n            this._header = header;\r\n\r\n            var list = document.createElement(\"div\");\r\n            list.className = \"list\";\r\n            this.list = list;\r\n\r\n            //            var docs = document.createElement(\"a\");\r\n            //            docs.className = \"docs\";\r\n            //            docs.href = data.;\r\n            //            this._docs = docs;\r\n            \r\n            element.appendChild(header);\r\n            //            header.appendChild(docs);\r\n            element.appendChild(list);\r\n\r\n            header.addEventListener(\"click\", () => {\r\n                element.classList.toggle(\"collapsed\");\r\n            });\r\n            \r\n            \r\n            //            docs.addEventListener(\"click\", () => {\r\n            //                \r\n            //            });            \r\n        }\r\n    }\r\n    export class SymbolUI {\r\n        private _data: ISymbol;\r\n        public element: HTMLElement;\r\n        private _docs: HTMLAnchorElement;\r\n\r\n        constructor(data: ISymbol) {\r\n            this._data = data;\r\n\r\n            this.element = document.createElement(\"div\");\r\n\r\n            var e = this.element;\r\n\r\n            e.className = \"symbol\";\r\n            e.id = data.fullName;\r\n            e.setAttribute(\"data-checked\", \"0\");\r\n            e.setAttribute(\"data-dependent\", \"0\");\r\n            e.setAttribute(\"data-kind\", data.kind.toString());\r\n\r\n            var chk = document.createElement(\"div\");\r\n            chk.className = \"checkbox\";\r\n            e.appendChild(chk);\r\n\r\n            var lab = document.createElement(\"div\");\r\n            lab.className = \"label\";\r\n            lab.textContent = data.name;// + \" [\" + text.Text.fileSize(data.file.size) + \" \" + text.Text.fileSize(data.file.sizeMinified) + \"]\";\r\n            //            lab.textContent = reference.name + \" [\" + reference.file.size + \" \" + reference.file.sizeMinified + \"]\";\r\n            e.appendChild(lab);\r\n\r\n            var docs = document.createElement(\"a\");\r\n            docs.className = \"docs\";\r\n            docs.href = data.url;\r\n            e.appendChild(docs);\r\n            this._docs = docs;\r\n\r\n            docs.addEventListener(\"click\", (e) => {\r\n                e.stopPropagation();\r\n            });\r\n        }\r\n\r\n        public setChecked(checked: boolean): void {\r\n            this.element.setAttribute(\"data-checked\", checked ? \"1\" : \"0\");\r\n        }\r\n\r\n        public setDependent(dependent: boolean): void {\r\n            this.element.setAttribute(\"data-dependent\", dependent ? \"1\" : \"0\");\r\n        }\r\n    }\r\n    export class Builder extends Plugin {\r\n\r\n        public symbols: ISymbol[] = null;\r\n        public files: IFile[] = null;\r\n        public modules: IModule[] = null;\r\n\r\n        private _content: HTMLDivElement = null;\r\n\r\n        public static SORT_FILESIZE: SortFunction = (a, b) => {\r\n            return a.file.size - b.file.size;\r\n        };\r\n\r\n        public static SORT_USAGE: SortFunction = (a, b) => {\r\n            return a.usageOrder - b.usageOrder;\r\n        };\r\n\r\n        public static SORT_MODULE: SortFunction = (a, b) => {\r\n            if (a.module != b.module)\r\n                return a.module.fullName.localeCompare(b.module.fullName);\r\n            if (a.name != b.name)\r\n                return a.name.localeCompare(b.name);\r\n            return a.fullName.localeCompare(b.fullName);\r\n        };\r\n\r\n        public static SORT_NAME: SortFunction = (a, b) => {\r\n            return a.name.localeCompare(b.name);\r\n        };\r\n\r\n        constructor() {\r\n            super();\r\n\r\n            var project = \"jsidea\";\r\n            var version = \"0.0.1\";\r\n            var url = \"http://127.0.0.1/eventfive/jsidea-website/build/\" + project + \"/\" + version + \"/\" + project + \".build.json\";\r\n            var klaus = \"PETER\";\r\n\r\n            var req = new model.Request<IData>(url);\r\n            //            req.method = model.RequestMethod.GET;\r\n            //            req.reader = model.Reader.JSON;\r\n            req.onFail.add((e) => console.log(\"ERROR\", e));\r\n            req.onSuccess.add((data) => this.parse(data));\r\n            req.load();\r\n\r\n//            var u = new model.URL(url);\r\n//            var params = u.parameters;\r\n//            params[\"TEST\"] = \"HELLO WORLD 1\";\r\n//            params[\"TEST\"] = \"HELLO WORLD 2\";\r\n//            u.parameters = params;\r\n//            u.addParameters({ \"asfasdf\": 5 });\r\n//            console.log(u.url);\r\n            \r\n            //            console.log(t.scope == Builder);\r\n            \r\n//            var drag = new action.Drag();\r\n\r\n        }\r\n\r\n        private parse(dat: IData): void {\r\n            var data = dat.typescript;\r\n            this._content = document.createElement(\"div\");\r\n            this._content.id = \"dependency\";\r\n            document.body.appendChild(this._content);\r\n            \r\n            //            var host = ts.createCompilerHost({ noLib: true });\r\n            //            console.log(host);\r\n            \r\n            //get all exports\r\n            this.symbols = data;\r\n            this.files = dat.files;\r\n            this.modules = [];\r\n            \r\n            //            for (var file of dat.files)\r\n            //                file.sizeMinified = text.Text.byteLengthUTF8(file.code);\r\n            \r\n            //create/collect references\r\n            var refs: ISymbol[] = this.symbols;\r\n            \r\n            //resolve names to IReference objects\r\n            var moduleLookup: any = {};\r\n            var modules: IModule[] = this.modules;\r\n            for (var ref of refs) {\r\n                ref.file = this.getFileByName(<any>ref.file);\r\n                for (var i = 0; i < ref.imports.length; ++i)\r\n                    ref.imports[i] = this.getByQualifiedName(<any>ref.imports[i]);\r\n                var path = ref.fullName.split(\".\");\r\n                ref.name = path[path.length - 1];\r\n                ref.module = null;//\r\n                ref.isDependent = false;\r\n                ref.isChecked = false;\r\n                var moduleName = path.slice(0, path.length - 1).join(\".\");\r\n                if (!moduleLookup[moduleName]) {\r\n                    ref.module = { fullName: moduleName, name: path[path.length - 2], symbols: [ref], ui: null };\r\n                    moduleLookup[moduleName] = ref.module;\r\n                    modules.push(ref.module);\r\n                }\r\n                else {\r\n                    ref.module = moduleLookup[moduleName];\r\n                    ref.module.symbols.push(ref);\r\n                }\r\n\r\n                if (!ref.usage)\r\n                    ref.usage = [];\r\n                for (var chi of ref.imports) {\r\n                    if (!chi.usage)\r\n                        chi.usage = [];\r\n                    if (chi.usage.indexOf(ref) === -1)\r\n                        chi.usage.push(ref);\r\n                }\r\n                ref.url = this.getURL(ref);\r\n            }\r\n\r\n            modules.sort((a, b) => {\r\n                return a.fullName.localeCompare(b.fullName);\r\n            });\r\n\r\n            //create ui\r\n            for (var mod of modules) {\r\n                mod.symbols.sort(Builder.SORT_NAME);\r\n                mod.ui = this.createModuleUI(mod);\r\n                for (var sym of mod.symbols) {\r\n                    sym.ui = this.createSymbolUI(sym);\r\n                }\r\n            }\r\n            \r\n            //multipath(2/3)\r\n            for (var ref of refs) {\r\n                ref.relations = this.createRelations(ref);\r\n            }\r\n\r\n            this.sort(Builder.SORT_MODULE);\r\n            \r\n            //multipath(3/3)\r\n            var ordered = this.getOrderedSymbols();\r\n            var i = 0;\r\n            for (var ref of ordered) {\r\n                ref.usageOrder = i++;\r\n            }\r\n\r\n            this.sort(Builder.SORT_MODULE);\r\n            \r\n            //            console.log(SourceMapGenerator);\r\n            //            return;\r\n            \r\n            //---------------\r\n            //TEST TYPESCRIPT\r\n            //---------------\r\n            \r\n            //            var filesToCompile = this.files;\r\n            //            var opt: ts.CompilerOptions = {};\r\n            //            opt.declaration = true;\r\n            //            opt.sourceMap = true;\r\n            //            opt.outFile = \"jsidea.js\";\r\n            //            var host = new build.VirtualHost(filesToCompile);\r\n            //            var names = [];\r\n            //            for (var f of this.files)\r\n            //                names.push(f.name);\r\n            //            var program = ts.createProgram(names, opt, host);\r\n            //            var em = program.emit();\r\n            //            console.log(host.results);\r\n\r\n            //            var s = new build.SymbolProcessor();\r\n            //            s.run(this.files);\r\n            //            console.log(\"EXPORTS\", s.exports);\r\n            \r\n            \r\n            var host = new build.FileSystem(this.files);\r\n            //            var filesToCompile = host.match(\"*.ts\");\r\n            //            \r\n            //            var opt: ts.CompilerOptions = {};\r\n            //            opt.declaration = true;\r\n            //            opt.sourceMap = true;\r\n            //            opt.outFile = \"jsidea.js\";\r\n            //            \r\n            //            var names = [];\r\n            //            for (var f of filesToCompile)\r\n            //                names.push(f.name);\r\n            //            \r\n            //            var program = ts.createProgram(names, opt, host);\r\n            //            var em = program.emit();\r\n\r\n            //            console.log(\"MATCH\", host.match(\"*.map\"));\r\n            \r\n            var result = build.Usage.TYPESCRIPT.apply(host.match(\"*.ts\"));\r\n            console.log(\"SYMBOLS\", result.symbols);\r\n            \r\n            \r\n\r\n            //            var options: any = {};\r\n            //            var ot: any = {};\r\n            //            //            ot.inSourceMap = host.results[0].code;\r\n            //            //            ot.outSourceMap = true;\r\n            //            var min = UglifyJS.minify(host.results[1].name, host, ot);\r\n            //            console.log(min);\r\n        }\r\n        private getURL(sym: ISymbol): string {\r\n            var base = \"http://127.0.0.1/eventfive/jsidea-build/bin/\";\r\n            if (sym.kind == 213)\r\n                base += \"interfaces/\";\r\n            else if (sym.kind == 212)\r\n                base += \"classes/\";\r\n            else if (sym.kind == 209)\r\n                base += \"modules/\";\r\n            base += sym.module.fullName.toLowerCase();\r\n            if (sym.kind == 209)//variable declaration\r\n                base += \".html#\" + sym.name.toLowerCase();\r\n            else if (sym.kind == 212 || sym.kind == 213)//class or interface\r\n                base += \".\" + sym.name.toLowerCase() + \".html\";\r\n            return base;\r\n        }\r\n\r\n        private getOrderedSymbols(): ISymbol[] {\r\n            function addAt(ary: any[], data: any, index: number): any[] {\r\n                var head = ary.slice(0, index);\r\n                var tail = ary.slice(index);\r\n                ary.splice(0, ary.length);\r\n                for (var da of head)\r\n                    ary.push(da);\r\n                ary.push(data);\r\n                for (var da of tail)\r\n                    ary.push(da);\r\n                return ary;\r\n            }\r\n\r\n            var symbols = this.symbols;\r\n            var res: ISymbol[] = [];\r\n            for (var ref of symbols) {\r\n                var l = res.length;\r\n                for (var i = 0; i < l; ++i) {\r\n                    //if its used by\r\n                    if (res[i] == ref)\r\n                        continue;\r\n                    if (res[i].relations.indexOf(ref) >= 0) {\r\n                        addAt(res, ref, i);\r\n                        break;\r\n                    }\r\n                }\r\n                if (res.indexOf(ref) === -1)\r\n                    res.push(ref);\r\n            }\r\n            return res;\r\n        }\r\n\r\n        public getFileByName(name: string): IFile {\r\n            for (var file of this.files)\r\n                if (file.name == name)\r\n                    return file;\r\n            return null;\r\n        }\r\n\r\n        private getByQualifiedName(name: string): ISymbol {\r\n            var refs = this.symbols;\r\n            for (var ref of refs)\r\n                if (ref.fullName == name)\r\n                    return ref;\r\n            return null;\r\n        }\r\n\r\n        private createRelations(ref: ISymbol, relations?: ISymbol[]): ISymbol[] {\r\n            relations = relations || [];\r\n            for (var imp of ref.imports) {\r\n                if (relations.indexOf(imp) < 0) {\r\n                    relations.push(imp);\r\n                    //                    if (imp.usage.indexOf(ref) === -1)\r\n                    //                        imp.usage.push(ref);\r\n                    this.createRelations(imp, relations);\r\n                }\r\n            }\r\n            return relations;\r\n        }\r\n\r\n        private createModuleUI(mod: IModule): ModuleUI {\r\n            var ui = new ModuleUI(mod);\r\n            this._content.appendChild(ui.element);\r\n            //            ui.element.addEventListener(\"click\", () => this.onClickElement(ref));\r\n            return ui;\r\n        }\r\n\r\n        private createSymbolUI(ref: ISymbol): SymbolUI {\r\n            var ui = new SymbolUI(ref);\r\n            ref.module.ui.list.appendChild(ui.element);\r\n            ui.element.addEventListener(\"click\", () => this.onClickElement(ref));\r\n            return ui;\r\n        }\r\n\r\n        private onClickElement(ref: ISymbol): void {\r\n            ref.isChecked = !ref.isChecked;\r\n            this.refreshDependency();\r\n        }\r\n\r\n        private refreshDependency(): void {\r\n            //collect checked\r\n            //and reset dependent\r\n            var checked: ISymbol[] = [];\r\n            for (var ref of this.symbols) {\r\n                ref.isDependent = false;\r\n                if (ref.isChecked)\r\n                    checked.push(ref);\r\n            }\r\n            \r\n            //mark dependencies\r\n            for (var ref of checked)\r\n                for (var rel of ref.relations)\r\n                    rel.isDependent = true;\r\n            \r\n            //size\r\n            var size = this.getSize();\r\n            //            console.log(\"SIZE\", text.Text.fileSize(size.bytesMinified));\r\n\r\n            //refresh the ui-elements\r\n            this.refreshUI();\r\n        }\r\n\r\n        private getSize(): { bytes: number, bytesMinified: number } {\r\n            var files: IFile[] = [];\r\n            for (var ref of this.symbols)\r\n                if (ref.isDependent)\r\n                    if (files.indexOf(ref.file) === -1)\r\n                        files.push(ref.file);\r\n            var bytesMinified = 0;\r\n            var bytes = 0;\r\n            for (var file of files) {\r\n                bytes += file.size;\r\n                bytesMinified += file.sizeMinified;\r\n            }\r\n            return { bytes: bytes, bytesMinified: bytesMinified };\r\n        }\r\n\r\n        public sort(f: SortFunction): void {\r\n            this.symbols.sort(f);\r\n            \r\n            //            var display = this._list.style.display;\r\n            //            this._list.style.display = \"none\";\r\n            //            for (var symbol of this.symbols)\r\n            //                this._list.appendChild(symbol.ui.getElement());\r\n            //            this._list.style.display = display;\r\n        }\r\n\r\n        private refreshUI(): void {\r\n            for (var ref of this.symbols) {\r\n                ref.ui.setChecked(ref.isChecked);\r\n                ref.ui.setDependent(ref.isDependent);\r\n            }\r\n        }\r\n    }\r\n}"
     },
     {
       "name": "src/jsidea/plugins/Plugin.ts",
